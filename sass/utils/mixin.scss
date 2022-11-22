@@ -1,6 +1,6 @@
 @mixin numero {
     background-color: $color-primary;
-    border-radius: 25px;
+    border-radius: $radius;
     color: white ;
     width: 18px;
     text-align: center;
