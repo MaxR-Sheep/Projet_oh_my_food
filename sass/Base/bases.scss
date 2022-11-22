@@ -6,7 +6,13 @@
     
 }
 
-.texte_primary
-{
-    color: $color-secondary;
+
+.fonct {
+    &__flex{
+        @include flex_center
+    }
+
+    &__num{
+        @include numero;
+    }
 }
