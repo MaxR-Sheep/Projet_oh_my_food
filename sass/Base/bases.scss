@@ -5,11 +5,13 @@
     border: 1px solid red;
     
 }
-
+body{
+    max-width: $mobile;
+}
 
 .fonct {
     &__flex{
-        @include flex_center
+        @include flex_center;
     }
 
     &__num{
