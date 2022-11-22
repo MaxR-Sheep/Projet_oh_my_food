@@ -8,7 +8,10 @@
 body{
     max-width: $mobile;
 }
-
+img
+{
+    width: 15%;
+}
 .fonct {
     &__flex{
         @include flex_center;
