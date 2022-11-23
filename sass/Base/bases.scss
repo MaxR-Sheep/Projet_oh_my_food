@@ -15,9 +15,21 @@ img
 .fonct {
     &__flex{
         @include flex_center;
+        @include shadow;
+        border-radius: $radius;
+        margin: $espace5;
+        width: 90%;
+    }
+    &__flex:hover{
+        background-color: $color-primary;
+        color: $color-secondary
     }
 
     &__num{
         @include numero;
     }
+}
+
+.fa-solid{
+    @include icone;
 }
