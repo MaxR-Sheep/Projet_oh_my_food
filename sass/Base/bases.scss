@@ -31,8 +31,8 @@ img
         width: 90%;
     }
     &__flex:hover{
-        background-color: $color-primary;
-        color: $color-secondary
+        background-color:lighten($color: $color-primary, $amount: 30%) ;
+    
     }
 
     &__num{

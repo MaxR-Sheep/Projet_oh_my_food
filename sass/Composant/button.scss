@@ -2,5 +2,10 @@
     border-radius: $radius;
     color: white;
     margin: $espace5;
-    
+    background: linear-gradient(-30deg, $color-primary, $color-secondary);
+    width: 80%;
+    border: 0;
+}
+.btn{
+    @include boutton()
 }
