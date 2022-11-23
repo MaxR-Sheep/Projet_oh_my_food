@@ -11,6 +11,17 @@ img {
   width: 15%;
 }
 
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.intro__localisation {
+  display: flex;
+  align-items: center;
+}
+
 .fonct__flex {
   display: flex;
   align-items: center;
