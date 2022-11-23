@@ -12,6 +12,15 @@ img
 {
     width: 15%;
 }
+
+.intro{
+
+    @include flex_align;
+    &__localisation{
+    @include flex_center;
+}
+}
+
 .fonct {
     &__flex{
         @include flex_center;

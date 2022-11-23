@@ -12,7 +12,14 @@
 @mixin flex_center{
     display: flex;
     align-items: center;
+}
 
+@mixin flex_align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 @mixin titre {
