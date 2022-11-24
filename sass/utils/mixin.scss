@@ -1,7 +1,15 @@
+@mixin titre ($size: large, $align: center) {
+    font-family: 'Shrikhand';
+    font-size: $size;
+    text-align: $align;
+}
+
+
 @mixin largeur ($width:60%){
 
     width: $width;
     hyphens: auto;
+    text-align: center;
 }
 
 @mixin lien {
@@ -16,7 +24,7 @@
     width: $size*2;
     height: $size*2;
     text-align: center;
-    margin: 0 0 0 -10px;
+    margin: 0 0 0 (- $size);
     
 }
 
@@ -37,20 +45,16 @@
     
 }
 
-@mixin titre {
-    font-family: 'Shrikhand';
-}
-
-@mixin icone {
+@mixin icone ($size: $espace5){
     color: grey;
-    margin: $espace5;
+    margin: $size;
 }
 
 @mixin shadow {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(85 85 85 / 25%) 0px 4px 10px;
 }
 
-@mixin card ($width:80% , $size: 20px){
+@mixin card ($width:95% , $size: 20px){
     @include shadow();
     @include lien();
     border: 0;
@@ -69,6 +73,6 @@
     font-weight: bolder;
     padding: 2%;
     position: absolute;
-    margin: -53%;
+    margin: 2%;
     margin-left: 62%;
 }

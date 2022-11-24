@@ -1,21 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
 
-.cadre_rouge
+.titre
 {
-    border: 1px solid red;
+    text-align: center;
+    position: relative;
+    @include shadow;
+    &__img{
+        width: 50%;
+        margin: $espace5;
+    }
+    &__footer{
+        @include titre(smaller,start);
+        color:white;
+    }
 }
+
 body{
     max-width: $mobile;
     font-family: 'Roboto';
+    display: block;
+    margin: 0;
 }
 
 .intro{
 
     @include flex_align;
+    background-color: $fond-color;
+    padding-bottom: $espace5;
     &__localisation{
     @include flex_center;
-    width: 40%;
-    justify-content: space-around;
+    background-color: darken($fond-color, $amount: 10%);
+    width: 100%;
+    justify-content: space-evenly;
+    color: darken($fond-color, $amount: 70%);
     }
     &__h2 {
         @include largeur(80%);
@@ -27,26 +44,34 @@ body{
 }
 
 .fonct {
+    margin: $espace5;
     &__flex{
         @include flex_center;
         @include shadow;
-        border-radius: $radius;
+        border-radius: 20px;
         margin: $espace5;
-        width: 90%;
+        width: 95%;
+        background-color: $fond-color;
     }
     &__num{
         @include numero;
     }
     &__icone{
-        @include icone;
+        @include icone (7%);
     }
     &__flex:hover{
         background-color:lighten($color: $color-primary, $amount: 30%) ;
     }
 }
 
+.section-card
+{
+    margin: $espace5;
+}
+
+
 .card {
-    @include card (90%);
+    @include card (100%);
     &__img{
         @include largeur(100%);
         border-radius: $radius $radius 0 0;
