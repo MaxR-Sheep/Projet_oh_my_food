@@ -56,4 +56,12 @@ body{
     &__new{
         @include new_volant;
     }
+    &__text{
+        display: flex;
+        flex-direction: column;
+    }
+    &__heart{
+        display: flex;
+
+    }
 }
