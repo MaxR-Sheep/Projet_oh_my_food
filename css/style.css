@@ -83,6 +83,13 @@ body {
   margin: -53%;
   margin-left: 62%;
 }
+.card__text {
+  display: flex;
+  flex-direction: column;
+}
+.card__heart {
+  display: flex;
+}
 
 .btn {
   border-radius: 25px;

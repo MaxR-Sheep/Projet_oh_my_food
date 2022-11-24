@@ -20,6 +20,10 @@
     
 }
 
+@mixin couleur {
+    background: linear-gradient(-30deg, $color-primary, $color-secondary);
+}
+
 @mixin flex_center{
     display: flex;
     align-items: center;
