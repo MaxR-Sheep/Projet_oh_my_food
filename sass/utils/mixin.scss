@@ -1,3 +1,14 @@
+@mixin largeur ($width:60%){
+
+    width: $width;
+    hyphens: auto;
+}
+
+@mixin lien {
+    text-decoration: none;
+    color: black;
+}
+
 @mixin numero ($color:white, $size: 10px){
     background-color: $color-primary;
     border-radius: $radius;
@@ -33,4 +44,27 @@
 
 @mixin shadow {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@mixin card ($width:80% , $size: 20px){
+    @include shadow();
+    @include lien();
+    border: 0;
+    border-radius:$size;
+    width: $width;
+    display: block;
+    margin-bottom: $espace5;
+}
+
+@mixin new_volant($color: $color-tertiary) {
+    color: darken($color, $amount: 10%);
+    background-color:lighten($color, 15%);
+    width: 15%;
+    border-radius: 3px;
+    font-size: smaller;
+    font-weight: bolder;
+    padding: 2%;
+    position: absolute;
+    margin: -53%;
+    margin-left: 62%;
 }
