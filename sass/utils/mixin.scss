@@ -21,15 +21,16 @@
     background-color: $color-primary;
     border-radius: $radius;
     color: $color ;
-    width: $size*2;
-    height: $size*2;
+    width: ($size*2) +2;
+    height: ($size*2) +2;
     text-align: center;
-    margin: 0 0 0 (- $size);
+    font-weight: 400;
+    margin: 0 0 0 (- $size +6);
     
 }
 
 @mixin couleur {
-    background: linear-gradient(-30deg, $color-primary, $color-secondary);
+    background: linear-gradient(-5deg, $color-primary, $color-secondary);
 }
 
 @mixin flex_center{
@@ -65,14 +66,14 @@
 }
 
 @mixin new_volant($color: $color-tertiary) {
-    color: darken($color, $amount: 10%);
-    background-color:lighten($color, 15%);
-    width: 15%;
+    color:darken($color, 35%);
+    background-color:$color;
+    width: 18%;
     border-radius: 3px;
-    font-size: smaller;
+    font-size: 13px;
     font-weight: bolder;
     padding: 2%;
     position: absolute;
-    margin: 2%;
-    margin-left: 62%;
+    margin: 4%;
+    margin-left: 65%;
 }

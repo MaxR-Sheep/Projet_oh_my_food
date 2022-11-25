@@ -31,7 +31,8 @@ body{
     @include flex_center;
     background-color: darken($fond-color, $amount: 10%);
     width: 100%;
-    justify-content: space-evenly;
+    font-weight: 600;
+    justify-content: center;
     color: darken($fond-color, $amount: 70%);
     }
     &__h2 {
@@ -60,7 +61,7 @@ body{
         @include icone (7%);
     }
     &__flex:hover{
-        background-color:lighten($color: $color-primary, $amount: 30%) ;
+        background-color:lighten($color: $color-primary, $amount: 35%) ;
     }
 }
 
