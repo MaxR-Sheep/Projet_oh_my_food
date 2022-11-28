@@ -4,7 +4,6 @@
     text-align: $align;
 }
 
-
 @mixin largeur ($width:60%){
 
     width: $width;
@@ -25,7 +24,7 @@
     height: ($size*2) +2;
     text-align: center;
     font-weight: 400;
-    margin: 0 0 0 (- $size +6);
+    margin: 0 0 0 -4% ;
     
 }
 
@@ -33,17 +32,11 @@
     background: linear-gradient(-5deg, $color-primary, $color-secondary);
 }
 
-@mixin flex_center{
+@mixin flex_complet($itemalign:center,$direction:column,$judtiftcontent:center,){
     display: flex;
-    align-items: center;
-}
-
-@mixin flex_align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
+    align-items: $itemalign;
+    flex-direction: $direction;
+    justify-content: $judtiftcontent;
 }
 
 @mixin icone ($size: $espace5){
