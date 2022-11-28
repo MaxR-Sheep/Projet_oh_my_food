@@ -93,7 +93,7 @@ body {
   border-radius: 20px;
   width: 100%;
   display: block;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .card__img {
   width: 100%;
@@ -135,28 +135,39 @@ body {
   margin-top: 0;
 }
 .card__heart--heart {
-  font-size: x-large;
+  font-size: 1.5em;
 }
 .footer {
   background-color: #363636;
+  height: 15em;
 }
 .footer__titre {
   font-family: "Shrikhand";
-  font-size: medium;
+  font-size: 1.2em;
   text-align: start;
   color: #f3f3f3;
   margin: 5%;
+  padding-top: 10%;
 }
 .footer__text {
   margin: 5%;
   text-decoration: none;
   color: #f3f3f3;
+  line-height: 10%;
 }
 .footer__text--icone {
   display: flex;
   align-items: center;
   flex-direction: initial;
   justify-content: start;
+}
+.footer__text--icone--i {
+  font-size: 0.8em;
+  margin-right: 1em;
+}
+.footer__text--contact {
+  text-decoration: none;
+  color: #f3f3f3;
 }
 
 .btn {

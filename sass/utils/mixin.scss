@@ -11,9 +11,9 @@
     text-align: center;
 }
 
-@mixin lien {
+@mixin lien ($color:black) {
     text-decoration: none;
-    color: black;
+    color: $color;
 }
 
 @mixin numero ($color:white, $size: 10px){
@@ -55,7 +55,7 @@
     border-radius:$size;
     width: $width;
     display: block;
-    margin-bottom: $espace5;
+    margin-bottom: $espace5*2;
 }
 
 @mixin new_volant($color: $color-tertiary) {
