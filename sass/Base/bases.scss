@@ -74,6 +74,7 @@ body{
         border-radius: $radius $radius 0 0;
         height: 10em;
         object-fit: cover;
+        object-position: center;
     }
     &__new{
         @include new_volant;
@@ -104,13 +105,14 @@ body{
     background-color: darken($color: darkgrey, $amount: 45%);
     height: 15em;
     &__titre{
-        @include titre(1.2em,start);
+        @include titre(1.1em,start);
         color:lighten($color: grey, $amount: 45%);
-        margin: $espace5;
-        padding-top: $espace5*2;
+        padding: $espace5  ;
+        margin: 0;
+        text-rendering: auto;
     }
     &__text{
-        margin: $espace5;
+        margin: 0 $espace5;
         text-decoration: none;
         color:lighten($color: grey, $amount: 45%);
         line-height: $espace5*2;

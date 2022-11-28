@@ -10,7 +10,7 @@
 }
 
 body {
-  max-width: 800px;
+  max-width: 100%;
   font-family: "Roboto";
   display: block;
   margin: 0;
@@ -102,6 +102,7 @@ body {
   border-radius: 25px 25px 0 0;
   height: 10em;
   object-fit: cover;
+  object-position: center;
 }
 .card__new {
   color: #2c9c81;
@@ -143,14 +144,15 @@ body {
 }
 .footer__titre {
   font-family: "Shrikhand";
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-align: start;
   color: #f3f3f3;
-  margin: 5%;
-  padding-top: 10%;
+  padding: 5%;
+  margin: 0;
+  text-rendering: auto;
 }
 .footer__text {
-  margin: 5%;
+  margin: 0 5%;
   text-decoration: none;
   color: #f3f3f3;
   line-height: 10%;
