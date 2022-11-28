@@ -10,6 +10,7 @@
     }
 }
 
+
 body{
     max-width: $mobile;
     font-family: 'Roboto';
@@ -90,7 +91,7 @@ body{
             }
         }
         &--heart{
-            font-size: x-large;
+            font-size: 1.5em;
         }
         &--heart:hover{
         
@@ -101,18 +102,27 @@ body{
 
 .footer{
     background-color: darken($color: darkgrey, $amount: 45%);
+    height: 15em;
     &__titre{
-        @include titre(medium,start);
+        @include titre(1.2em,start);
         color:lighten($color: grey, $amount: 45%);
         margin: $espace5;
+        padding-top: $espace5*2;
     }
     &__text{
         margin: $espace5;
         text-decoration: none;
         color:lighten($color: grey, $amount: 45%);
+        line-height: $espace5*2;
         &--icone{
             @include flex_complet(center, initial, start);
+            &--i{
+                font-size: 0.8em;
+                margin-right: 1em;
+            }
         }
-    
+        &--contact{
+            @include lien (lighten($color: grey, $amount: 45%));
+        }
     }
 }
