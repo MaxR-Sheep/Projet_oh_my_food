@@ -8,12 +8,6 @@
   width: 50%;
   margin: 5%;
 }
-.titre__footer {
-  font-family: "Shrikhand";
-  font-size: smaller;
-  text-align: start;
-  color: white;
-}
 
 body {
   max-width: 800px;
@@ -24,20 +18,25 @@ body {
 
 .intro {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   background-color: rgb(240, 240, 240);
   padding-bottom: 5%;
 }
 .intro__localisation {
   display: flex;
   align-items: center;
+  flex-direction: initial;
+  justify-content: initial;
   background-color: #d7d7d7;
   width: 100%;
   font-weight: 600;
   justify-content: center;
   color: #3e3e3e;
+}
+.intro__localisation--icone {
+  margin-right: 5%;
 }
 .intro__h2 {
   width: 80%;
@@ -56,6 +55,8 @@ body {
 .fonct__flex {
   display: flex;
   align-items: center;
+  flex-direction: initial;
+  justify-content: initial;
   box-shadow: rgba(85, 85, 85, 0.25) 0px 4px 10px;
   border-radius: 20px;
   margin: 5%;
@@ -70,7 +71,7 @@ body {
   height: 22px;
   text-align: center;
   font-weight: 400;
-  margin: 0 0 0 -4px;
+  margin: 0 0 0 -4%;
 }
 .fonct__icone {
   color: grey;
@@ -99,7 +100,7 @@ body {
   hyphens: auto;
   text-align: center;
   border-radius: 25px 25px 0 0;
-  height: 13em;
+  height: 10em;
   object-fit: cover;
 }
 .card__new {
@@ -114,12 +115,48 @@ body {
   margin: 4%;
   margin-left: 65%;
 }
-.card__text {
-  display: flex;
-  flex-direction: column;
-}
 .card__heart {
   display: flex;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: space-around;
+}
+.card__heart__text {
+  display: flex;
+  align-items: initial;
+  flex-direction: column;
+  justify-content: initial;
+  margin-left: -5%;
+}
+.card__heart__text--h3 {
+  margin-bottom: 0;
+}
+.card__heart__text--p {
+  margin-top: 0;
+}
+.card__heart--heart {
+  font-size: x-large;
+}
+.footer {
+  background-color: #363636;
+}
+.footer__titre {
+  font-family: "Shrikhand";
+  font-size: medium;
+  text-align: start;
+  color: #f3f3f3;
+  margin: 5%;
+}
+.footer__text {
+  margin: 5%;
+  text-decoration: none;
+  color: #f3f3f3;
+}
+.footer__text--icone {
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: start;
 }
 
 .btn {
