@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
-
+/*Titre*/
 .titre{
     display: flex;
     justify-content: center;
@@ -15,14 +15,14 @@
     }
 }
 
-
+/*Body*/
 body{
     max-width: $mobile;
     font-family: 'Roboto';
     display: block;
     margin: 0;
 }
-
+/* intro index*/
 .intro{
     @include flex_complet(center,column,center);
     background-color: $fond-color;
@@ -45,7 +45,7 @@ body{
         @include largeur(90%);
     }
 }
-
+/*fonctionnement index*/
 .fonct {
     margin: $espace5;
     &__flex{
