@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
 
 .titre{
+    display: flex;
+    justify-content: center;
     text-align: center;
     position: relative;
     @include shadow;
     &__img{
         width: 50%;
         margin: $espace5;
+    }
+    &__arrow{
+        text-align: center;
     }
 }
 

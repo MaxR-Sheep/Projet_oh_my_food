@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
 .titre {
+  display: flex;
+  justify-content: center;
   text-align: center;
   position: relative;
   box-shadow: rgba(85, 85, 85, 0.25) 0px 4px 10px;
@@ -7,6 +9,9 @@
 .titre__img {
   width: 50%;
   margin: 5%;
+}
+.titre__arrow {
+  text-align: center;
 }
 
 body {
