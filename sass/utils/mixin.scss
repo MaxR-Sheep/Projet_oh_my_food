@@ -16,15 +16,15 @@
     color: $color;
 }
 
-@mixin numero ($color:white, $size: 10px){
+@mixin numero ($color:white, $size: 1.25em){
     background-color: $color-primary;
     border-radius: $radius;
     color: $color ;
-    width: ($size*2)+2;
-    height: ($size*2)+2;
+    width: $size;
+    height: $size;
     text-align: center;
     font-weight: 400;
-    margin: 0 0 0 -4% ;
+    margin: 0 0 0 -3% ;
     
 }
 
