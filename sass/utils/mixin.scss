@@ -20,8 +20,8 @@
     background-color: $color-primary;
     border-radius: $radius;
     color: $color ;
-    width: ($size*2) +2;
-    height: ($size*2) +2;
+    width: ($size*2)+2;
+    height: ($size*2)+2;
     text-align: center;
     font-weight: 400;
     margin: 0 0 0 -4% ;
@@ -39,8 +39,8 @@
     justify-content: $judtiftcontent;
 }
 
-@mixin icone ($size: $espace5){
-    color: grey;
+@mixin icone ($color:grey,$size: $espace5){
+    color: $color;
     margin: $size;
 }
 
