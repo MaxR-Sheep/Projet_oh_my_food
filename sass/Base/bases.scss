@@ -110,12 +110,11 @@ body{
             background:-webkit-linear-gradient( 180deg , $color-primary, $color-secondary);
             -webkit-background-clip: text;
             color: transparent;
+            &:hover{
+                opacity: 1;
+                transition: 0.3s ease-in-out;
+            }
         }
-        &__solid:hover{
-            opacity: 1;
-            transition: 0.3s ease-in-out;
-        }
-        
     }
 }
 
