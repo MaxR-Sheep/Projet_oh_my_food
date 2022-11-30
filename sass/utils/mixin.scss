@@ -45,7 +45,7 @@
 }
 
 @mixin shadow {
-    box-shadow: rgba(85 85 85 / 25%) 0px 4px 10px;
+    box-shadow: rgba(85 85 85 / 20%) 0px 5px 20px;
 }
 
 @mixin card ($width:95% , $size: 20px){

@@ -5,13 +5,17 @@
     justify-content: center;
     text-align: center;
     position: relative;
+    align-items: center;
     @include shadow;
     &__img{
-        width: 50%;
-        margin: $espace5;
+        width: 43%;
+        margin: $espace5 $espace5*4;
     }
     &__arrow{
         text-align: center;
+        text-decoration: none;
+        color: darken($fond-color, $amount: 75%);
+        font-size: 1.25em;
     }
 }
 
@@ -22,7 +26,17 @@ body{
     display: block;
     margin: 0;
 }
-/* intro index*/
+
+.body__page{
+    background-color: lighten($fond-color, $amount: 5%);
+}
+
+.img__page{
+    width: 100%;
+    position: relative;
+}
+
+/* intro index et page*/
 .intro{
     @include flex_complet(center,column,center);
     background-color: $fond-color;
@@ -43,6 +57,17 @@ body{
     }
     &__p{
         @include largeur(90%);
+    }
+    &__page{
+        @include flex_complet(center, initial, space-between);
+        border-radius: $radius $radius 0 0;
+        position: relative;
+        padding: $espace5;
+        margin-top: -2.5em;
+        background-color: lighten($fond-color, $amount: 5%);
+        &__h1{
+            @include titre(1.5em ,initial);
+        }
     }
 }
 /*fonctionnement index*/
@@ -74,6 +99,11 @@ body{
 .section-card
 {
     margin: $espace5;
+    &__h2{
+        font-style: normal;
+
+    }
+
 }
 
 .card {
@@ -89,11 +119,11 @@ body{
         @include new_volant;
     }
     &__heart{
-        @include flex_complet(center, initial, space-around);
+        @include flex_complet(center, initial, space-between);
+        padding: 0 $espace5;
     }
     &__text{
         @include flex_complet(initial, column, initial);
-        margin-left: - $espace5;
         &--h3{
             margin-bottom: 0;
         }
@@ -120,6 +150,13 @@ body{
                 transition: 0.3s ease-in-out;
             }
         }
+    }
+    &__page{
+        @include card (92%);
+        @include flex_complet(center, initial, space-between);
+        padding: 0 $espace5;
+        background-color: white;
+        
     }
 }
 

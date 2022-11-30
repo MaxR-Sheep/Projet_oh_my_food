@@ -5,14 +5,18 @@
   justify-content: center;
   text-align: center;
   position: relative;
-  box-shadow: rgba(85, 85, 85, 0.25) 0px 4px 10px;
+  align-items: center;
+  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
 }
 .titre__img {
-  width: 50%;
-  margin: 5%;
+  width: 43%;
+  margin: 5% 20%;
 }
 .titre__arrow {
   text-align: center;
+  text-decoration: none;
+  color: #313131;
+  font-size: 1.25em;
 }
 
 /*Body*/
@@ -23,7 +27,16 @@ body {
   margin: 0;
 }
 
-/* intro index*/
+.body__page {
+  background-color: #fdfdfd;
+}
+
+.img__page {
+  width: 100%;
+  position: relative;
+}
+
+/* intro index et page*/
 .intro {
   display: flex;
   align-items: center;
@@ -56,6 +69,22 @@ body {
   hyphens: auto;
   text-align: center;
 }
+.intro__page {
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: space-between;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  padding: 5%;
+  margin-top: -2.5em;
+  background-color: #fdfdfd;
+}
+.intro__page__h1 {
+  font-family: "Shrikhand";
+  font-size: 1.5em;
+  text-align: initial;
+}
 
 /*fonctionnement index*/
 .fonct {
@@ -66,7 +95,7 @@ body {
   align-items: center;
   flex-direction: initial;
   justify-content: initial;
-  box-shadow: rgba(85, 85, 85, 0.25) 0px 4px 10px;
+  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
   border-radius: 20px;
   margin: 5%;
   width: 95%;
@@ -96,9 +125,12 @@ body {
 .section-card {
   margin: 5%;
 }
+.section-card__h2 {
+  font-style: normal;
+}
 
 .card {
-  box-shadow: rgba(85, 85, 85, 0.25) 0px 4px 10px;
+  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
   text-decoration: none;
   color: black;
   border: 0;
@@ -132,14 +164,14 @@ body {
   display: flex;
   align-items: center;
   flex-direction: initial;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 5%;
 }
 .card__text {
   display: flex;
   align-items: initial;
   flex-direction: column;
   justify-content: initial;
-  margin-left: -5%;
 }
 .card__text--h3 {
   margin-bottom: 0;
@@ -166,6 +198,22 @@ body {
 .card__icone__solid:hover {
   opacity: 1;
   transition: 0.3s ease-in-out;
+}
+.card__page {
+  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
+  text-decoration: none;
+  color: black;
+  border: 0;
+  border-radius: 20px;
+  width: 92%;
+  display: block;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: white;
 }
 
 .footer {
