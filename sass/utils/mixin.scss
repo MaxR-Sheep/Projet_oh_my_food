@@ -56,6 +56,7 @@
     width: $width;
     display: block;
     margin-bottom: $espace5*2;
+    text-overflow: ellipsis;
 }
 
 @mixin new_volant($color: $color-tertiary) {
