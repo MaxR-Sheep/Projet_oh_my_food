@@ -1,0 +1,45 @@
+/*Body*/
+body{
+    max-width: $mobile;
+    font-family: 'Roboto';
+    display: block;
+    margin: 0;
+}
+
+.body__page{
+    background-color: lighten($fond-color, $amount: 5%);
+}
+
+.img__page{
+    width: 100%;
+    position: relative;
+}
+
+/* footer*/
+.footer{
+    background-color: darken($color: darkgrey, $amount: 45%);
+    height: 15em;
+    &__titre{
+        @include titre(1.1em,start);
+        color:lighten($color: grey, $amount: 45%);
+        padding: $espace5  ;
+        margin: 0;
+        text-rendering: auto;
+    }
+    &__text{
+        margin: 0 $espace5;
+        text-decoration: none;
+        color:lighten($color: grey, $amount: 45%);
+        line-height: $espace5*2;
+        &--icone{
+            @include flex_complet(center, initial, start);
+            &--i{
+                font-size: 0.8em;
+                margin-right: 1em;
+            }
+        }
+        &--contact{
+            @include lien (lighten($color: grey, $amount: 45%));
+        }
+    }
+}
