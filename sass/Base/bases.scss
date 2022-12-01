@@ -146,9 +146,10 @@ body{
             background:-webkit-linear-gradient( 180deg , $color-primary, $color-secondary);
             -webkit-background-clip: text;
             color: transparent;
+            transition: all 400ms;
             &:hover{
                 opacity: 1;
-                transition: 0.3s ease-in-out;
+                transform: ease-in;
             }
         }
     }
