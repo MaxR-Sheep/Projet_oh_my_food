@@ -59,7 +59,7 @@
     &__flex{
         @include flex_complet(center, initial , initial);
         @include shadow;
-        border-radius: 20px;
+        border-radius: $radius;
         margin: $espace5;
         width: 95%;
         background-color: $fond-color;
@@ -117,9 +117,7 @@
         position: relative;
         &__regular{
             position:absolute ;
-            &:hover{
-                color:transparent;
-            }
+        
         }
         &__solid{
             position: relative;
