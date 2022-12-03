@@ -30,7 +30,7 @@
     &__rotate{
         align-self: center;
         overflow: hidden;
-        transform: scale(0) translateX(-2em);
+        transform: scaleX(0);
         transform-origin: right 50%;
         width: 4em;
         height: 4.8em;
@@ -40,9 +40,12 @@
         
         }
         &--anim{
-            transform: translateX(0);
+            
+            transform:  rotate(-1turn);
+            color: white;
             text-align: center;
             opacity: 0;
+            transition: 1s $easing;
         
         }
     
