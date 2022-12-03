@@ -1,15 +1,21 @@
-@mixin boutton {
+@mixin boutton($size:100%) {
     border-radius: $radius;
     color: white;
     margin: $espace5;
     @include couleur;
-    width: 100%;
+    width: $size;
     border: 0;
     padding: 1em 2em;
     font-size: medium;
 }
 .btn{
-    @include boutton();
+    @include boutton(100%);
+    &__page{
+        @include boutton(40%);
+    }
+    &__center{
+        text-align:center;
+    }
 }
 
 

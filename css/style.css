@@ -223,6 +223,19 @@
   padding: 1em 2em;
   font-size: medium;
 }
+.btn__page {
+  border-radius: 20px;
+  color: white;
+  margin: 5%;
+  background: linear-gradient(-5deg, #9356DC, #FF79DA);
+  width: 40%;
+  border: 0;
+  padding: 1em 2em;
+  font-size: medium;
+}
+.btn__center {
+  text-align: center;
+}
 
 .btn-card {
   display: flex;
