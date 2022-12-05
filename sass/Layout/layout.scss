@@ -1,20 +1,16 @@
 /*Body*/
 body{
     max-width: $mobile;
+    background-color: $fond-color;
     font-family: 'Roboto';
     display: block;
     margin: 0;
-}
-
-.body__page{
-    background-color: lighten($fond-color, $amount: 5%);
 }
 
 .img__page{
     width: 100%;
     position: relative;
 }
-
 
 .trait{
     width: 3.5em;

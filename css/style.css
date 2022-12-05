@@ -6,7 +6,7 @@
   text-align: center;
   position: relative;
   align-items: center;
-  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
+  box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
 }
 .titre__img {
   width: 43%;
@@ -15,7 +15,7 @@
 .titre__arrow {
   text-align: center;
   text-decoration: none;
-  color: #313131;
+  color: #393939;
   font-size: 1.25em;
 }
 
@@ -25,7 +25,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(240, 240, 240);
+  background-color: #f8f8f8;
   padding-bottom: 5%;
 }
 .intro__localisation {
@@ -33,11 +33,11 @@
   align-items: center;
   flex-direction: initial;
   justify-content: initial;
-  background-color: #d7d7d7;
+  background-color: #dfdfdf;
   width: 100%;
   font-weight: 600;
   justify-content: center;
-  color: #3e3e3e;
+  color: #464646;
 }
 .intro__localisation--icone {
   margin-right: 5%;
@@ -61,16 +61,21 @@
   position: relative;
   padding: 5% 5% 0;
   margin-top: -2.5em;
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
 }
 .intro__page__h1 {
   font-family: "Shrikhand";
   font-size: 1.65em;
   text-align: initial;
+  background-color: #f8f8f8;
 }
 
 /*fonctionnement index*/
 .fonct {
+  padding: 2em 0 2em;
+  background-color: white;
+}
+.fonct__marg {
   margin: 5%;
 }
 .fonct__flex {
@@ -78,11 +83,11 @@
   align-items: center;
   flex-direction: initial;
   justify-content: initial;
-  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
+  box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
   border-radius: 20px;
   margin: 5%;
   width: 95%;
-  background-color: rgb(240, 240, 240);
+  background-color: #f8f8f8;
 }
 .fonct__flex__icone {
   color: grey;
@@ -105,6 +110,7 @@
   margin: 0 0 0 -3%;
 }
 
+/* Section card*/
 .section-card {
   margin: 5%;
 }
@@ -114,7 +120,7 @@
 }
 
 .card {
-  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
+  box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
   text-decoration: none;
   color: black;
   border: 0;
@@ -122,7 +128,6 @@
   width: 100%;
   display: block;
   margin-bottom: 10%;
-  text-overflow: ellipsis;
 }
 .card__img {
   width: 100%;
@@ -165,6 +170,16 @@
 .card__text--p {
   margin-top: 0;
 }
+.card__text-page {
+  display: flex;
+  align-items: initial;
+  flex-direction: column;
+  justify-content: initial;
+  white-space: nowrap;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .card__icone {
   position: relative;
 }
@@ -184,7 +199,7 @@
   transform: ease-in;
 }
 .card__page {
-  box-shadow: rgba(85, 85, 85, 0.2) 0px 5px 20px;
+  box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
   text-decoration: none;
   color: black;
   border: 0;
@@ -192,7 +207,6 @@
   width: 92%;
   display: block;
   margin-bottom: 10%;
-  text-overflow: ellipsis;
   display: flex;
   align-items: center;
   flex-direction: initial;
@@ -245,12 +259,13 @@
   justify-content: initial;
 }
 .btn-card--anim {
+  font-weight: bold;
   align-self: end;
   overflow: hidden;
   transform: translateX(2em);
 }
 .btn-card__rotate {
-  align-self: center;
+  text-align: center;
   overflow: hidden;
   transform: scaleX(0);
   transform-origin: right 50%;
@@ -262,6 +277,7 @@
   margin-right: 5%;
 }
 .btn-card__rotate--anim {
+  margin-top: 0.6em;
   transform: rotate(-1turn);
   color: white;
   text-align: center;
@@ -272,13 +288,10 @@
 /*Body*/
 body {
   max-width: 100%;
+  background-color: #f8f8f8;
   font-family: "Roboto";
   display: block;
   margin: 0;
-}
-
-.body__page {
-  background-color: #fdfdfd;
 }
 
 .img__page {

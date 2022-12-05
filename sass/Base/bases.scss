@@ -47,15 +47,20 @@
         position: relative;
         padding:  $espace5 $espace5 0;
         margin-top: -2.5em;
-        background-color: lighten($fond-color, $amount: 5%);
+        background-color: $fond-color;
         &__h1{
             @include titre(1.65em ,initial);
+            background-color: $fond-color;
         }
     }
 }
 /*fonctionnement index*/
 .fonct {
-    margin: $espace5;
+    padding: 2em 0 2em;
+    background-color: white;
+    &__marg{
+        margin: $espace5;
+    }
     &__flex{
         @include flex_complet(center, initial , initial);
         @include shadow;
@@ -76,8 +81,9 @@
     &__num{
         @include numero;
     }
-    
 }
+
+/* Section card*/
 
 .section-card
 {
@@ -113,11 +119,17 @@
             margin-top: 0;
         }
     }
+    &__text-page{
+        @include flex_complet(initial, column, initial);
+        white-space: nowrap;
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     &__icone{
         position: relative;
         &__regular{
             position:absolute ;
-        
         }
         &__solid{
             position: relative;

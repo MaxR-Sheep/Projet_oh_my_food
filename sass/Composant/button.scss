@@ -23,12 +23,13 @@
 .btn-card{
     @include flex_complet(initial,initial, initial);
     &--anim{
+        font-weight: bold;
         align-self: end;
         overflow: hidden;
         transform: translateX(2em);
     }
     &__rotate{
-        align-self: center;
+        text-align: center;
         overflow: hidden;
         transform: scaleX(0);
         transform-origin: right 50%;
@@ -40,7 +41,7 @@
         
         }
         &--anim{
-            
+            margin-top: 0.6em;
             transform:  rotate(-1turn);
             color: white;
             text-align: center;
