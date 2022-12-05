@@ -164,7 +164,8 @@
                 transition: transform 500ms $easing;
                 &--anim{ 
                     opacity: 1;
-                    transform: rotate(1turn);
+                    
+                    animation: rotate-center 0.6s ease-in-out both;
                 }
             }
         }

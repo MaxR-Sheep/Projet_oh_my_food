@@ -11,7 +11,7 @@
 .btn{
     @include boutton(100%);
     &__page{
-        @include boutton(40%);
+        @include boutton(50%);
     }
     &__center{
         text-align:center;
@@ -43,7 +43,7 @@
         }
         &--anim{
             margin-top: 0.6em;
-            transform:  rotate(0turn);
+            animation: rotate-center 0.6s ease-in-out both;
             color: white;
             text-align: center;
             opacity: 0;
