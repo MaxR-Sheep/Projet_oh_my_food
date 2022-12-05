@@ -57,7 +57,7 @@
   align-items: center;
   flex-direction: initial;
   justify-content: space-between;
-  border-radius: 20px 20px 0 0;
+  border-radius: 35px 35px 0 0;
   position: relative;
   padding: 5% 5% 0;
   margin-top: -2.5em;
@@ -116,7 +116,8 @@
 }
 .section-card__h2 {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .card {
@@ -166,9 +167,11 @@
 }
 .card__text--h3 {
   margin-bottom: 0;
+  font-size: 1em;
 }
 .card__text--p {
   margin-top: 0;
+  font-size: 0.9em;
 }
 .card__text-page {
   display: flex;
@@ -213,6 +216,7 @@
   justify-content: space-between;
   padding: 0 0 0 5%;
   background-color: white;
+  margin-bottom: 5%;
 }
 .card__page:hover .btn-card--anim {
   transform: translateX(-1.5em);
@@ -259,6 +263,7 @@
   justify-content: initial;
 }
 .btn-card--anim {
+  font-size: 0.9em;
   font-weight: bold;
   align-self: end;
   overflow: hidden;
@@ -297,13 +302,15 @@ body {
 .img__page {
   width: 100%;
   position: relative;
+  object-fit: cover;
+  height: 16em;
 }
 
 .trait {
-  width: 3.5em;
+  width: 2.5em;
   height: 3px;
   background-color: #99E2D0;
-  margin: -1em 0 2em;
+  margin: -0.5em 0 2em;
 }
 
 /* footer*/

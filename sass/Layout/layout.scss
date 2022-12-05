@@ -10,13 +10,15 @@ body{
 .img__page{
     width: 100%;
     position: relative;
+    object-fit: cover;
+    height: 16em;
 }
 
 .trait{
-    width: 3.5em;
+    width: 2.5em;
     height: 3px;
     background-color: $color-tertiary;
-    margin: -1em 0 2em;
+    margin: -0.5em 0 2em;
 
 }
 

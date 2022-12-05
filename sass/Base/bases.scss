@@ -43,7 +43,7 @@
     }
     &__page{
         @include flex_complet(center, initial, space-between);
-        border-radius: $radius $radius 0 0;
+        border-radius: $radiustop $radiustop 0 0;
         position: relative;
         padding:  $espace5 $espace5 0;
         margin-top: -2.5em;
@@ -90,7 +90,8 @@
     margin: $espace5;
     &__h2{
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 400;
+        font-size: 1rem;
     }
 }
 
@@ -114,9 +115,11 @@
         @include flex_complet(initial, column, initial);
         &--h3{
             margin-bottom: 0;
+            font-size: 1em;
         }
         &--p{
             margin-top: 0;
+            font-size: 0.9em
         }
     }
     &__text-page{
@@ -149,6 +152,7 @@
         @include flex_complet(center, initial, space-between);
         padding: 0 0 0 $espace5;
         background-color: white;
+        margin-bottom: $espace5;
         &:hover .btn-card{
             &--anim{
                 transform: translateX(-1.5em);

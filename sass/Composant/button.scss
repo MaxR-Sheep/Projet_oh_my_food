@@ -23,6 +23,7 @@
 .btn-card{
     @include flex_complet(initial,initial, initial);
     &--anim{
+        font-size: 0.9em;
         font-weight: bold;
         align-self: end;
         overflow: hidden;
