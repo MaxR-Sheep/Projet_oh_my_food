@@ -229,7 +229,7 @@
 }
 .card__page:hover .btn-card__rotate--anim {
   opacity: 1;
-  transform: rotate(1turn);
+  animation: rotate-center 0.6s ease-in-out both;
 }
 
 .btn {
@@ -247,7 +247,7 @@
   color: white;
   margin: 5%;
   background: linear-gradient(-5deg, #9356DC, #FF79DA);
-  width: 40%;
+  width: 50%;
   border: 0;
   padding: 1em 2em;
   font-size: medium;
@@ -283,7 +283,7 @@
 }
 .btn-card__rotate--anim {
   margin-top: 0.6em;
-  transform: rotate(0turn);
+  animation: rotate-center 0.6s ease-in-out both;
   color: white;
   text-align: center;
   opacity: 0;
