@@ -91,7 +91,7 @@
 }
 .fonct__flex__icone {
   color: grey;
-  margin: 7%;
+  margin: 5% 7% 5% 1%;
 }
 .fonct__flex:hover {
   background-color: #f2eafb;
@@ -99,15 +99,19 @@
 .fonct__flex:hover > .fa-solid {
   color: #9356DC;
 }
-.fonct__num {
+.fonct__rond {
   background-color: #9356DC;
+  height: 1.8em;
+  width: 1.8em;
   border-radius: 20px;
+  position: relative;
+  left: -0.9em;
+}
+.fonct__num {
   color: white;
-  width: 1.35em;
-  height: 1.35em;
   text-align: center;
-  font-size: 0.8em;
-  margin: 0 0 0 -3%;
+  font-size: 1em;
+  margin: 5px 0 0 0;
 }
 
 /* Section card*/

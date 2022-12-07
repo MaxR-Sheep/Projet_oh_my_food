@@ -16,15 +16,22 @@
     color: $color;
 }
 
-@mixin numero ($color:white, $size: 1.35em){
-    background-color: $color-primary;
-    border-radius: $radius;
+@mixin numero ($color:white, $size: 1em){
+    
     color: $color ;
-    width: $size;
-    height: $size;
     text-align: center;
-    font-size: 0.8em;
-    margin: 0 0 0 -3% ;
+    font-size: $size;
+    margin: 5px 0 0 0 ;
+    
+}
+
+@mixin  rond($size: 2em) {
+    background-color: $color-primary;
+    height: $size;
+    width: $size;
+    border-radius: $radius;
+    position: relative;
+    left: -0.9em;
     
 }
 

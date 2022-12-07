@@ -69,7 +69,7 @@
         width: 95%;
         background-color: $fond-color;
         &__icone{
-            @include icone ( grey,7%);
+            @include icone ( grey, 5% 7% 5% 1%);
         }
         &:hover{
             background-color:lighten($color: $color-primary, $amount: 35%) ;
@@ -77,6 +77,10 @@
             color:$color-primary ;
             }
         }
+    }
+    &__rond{
+        @include rond (1.8em);
+        
     }
     &__num{
         @include numero;
