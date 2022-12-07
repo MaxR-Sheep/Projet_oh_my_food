@@ -188,10 +188,10 @@
   align-items: initial;
   flex-direction: column;
   justify-content: initial;
-  width: 70%;
+  width: 85%;
 }
 .card__text-page:hover {
-  width: 50%;
+  width: 60%;
   transition: width 600ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
 .card__icone {
@@ -224,17 +224,19 @@
   display: flex;
   align-items: center;
   flex-direction: initial;
-  justify-content: space-between;
+  justify-content: initial;
   padding: 0 0 0 5%;
   background-color: white;
   margin-bottom: 5%;
 }
 .card__page:hover .btn-card--anim {
-  transform: translateX(-1.5em);
-  transition: transform 600ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
+  width: 15%;
+  transform: translateX(50%);
+  transition: all 600ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
 .card__page:hover .btn-card__rotate {
   transform: scaleX(1);
+  width: 25%;
   border-radius: 0 20px 20px 0;
   transition: transform 500ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
@@ -274,18 +276,19 @@
   justify-content: initial;
 }
 .btn-card--anim {
+  width: 10%;
   font-size: 0.9em;
   font-weight: bold;
   align-self: end;
   overflow: hidden;
-  transform: translateX(2em);
+  transform: translateX(0);
 }
 .btn-card__rotate {
   text-align: center;
   overflow: hidden;
   transform: scaleX(0);
   transform-origin: right 50%;
-  width: 4em;
+  width: 0;
   height: 4.8em;
   background-color: #99E2D0;
 }

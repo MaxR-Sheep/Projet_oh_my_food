@@ -23,18 +23,19 @@
 .btn-card{
     @include flex_complet(initial,initial, initial);
     &--anim{
+        width: 10%;
         font-size: 0.9em;
         font-weight: bold;
         align-self: end;
         overflow: hidden;
-        transform: translateX(2em);
+        transform: translateX(0);
     }
     &__rotate{
         text-align: center;
         overflow: hidden;
         transform: scaleX(0);
         transform-origin: right 50%;
-        width: 4em;
+        width: 0;
         height: 4.8em;
         background-color: $color-tertiary;
         &:not(:last-child){
