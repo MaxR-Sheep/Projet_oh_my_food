@@ -63,7 +63,12 @@
     width: $width;
     display: block;
     margin-bottom: $espace5*2;
+}
 
+@mixin nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @mixin new_volant($color: $color-tertiary) {
