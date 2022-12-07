@@ -123,15 +123,21 @@
         }
         &--p{
             margin-top: 0;
-            font-size: 0.9em
+            font-size: 0.9em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
     &__text-page{
         @include flex_complet(initial, column, initial);
-        white-space: nowrap;
         width: 70%;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+        &:hover{
+            width:50%;
+            transition:  width 600ms $easing;
+        }
     }
     &__icone{
         position: relative;
