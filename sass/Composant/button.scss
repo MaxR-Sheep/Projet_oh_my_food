@@ -39,7 +39,6 @@
         background-color: $color-tertiary;
         &:not(:last-child){
             margin-right: $espace5;
-        
         }
         &--anim{
             margin-top: 0.6em;
@@ -49,6 +48,5 @@
             opacity: 0;
             transition: 1s $easing;
         }
-    
     }
 }
