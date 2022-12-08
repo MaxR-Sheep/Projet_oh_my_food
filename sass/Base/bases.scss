@@ -100,7 +100,7 @@
 }
 
 .card {
-    @include card (100%);
+    @include card ;
     
     &__img{
         @include largeur(100%);
