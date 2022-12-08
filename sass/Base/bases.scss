@@ -101,6 +101,7 @@
 
 .card {
     @include card (100%);
+    
     &__img{
         @include largeur(100%);
         border-radius: $radius $radius 0 0;
@@ -156,11 +157,25 @@
         }
     }
     &__page{
-        @include card (92%);
+        @include card ;
         @include flex_complet(center, initial, initial);
         padding: 0 0 0 $espace5;
         background-color: white;
         margin-bottom: $espace5;
+        overflow: hidden;
+        
+        transform-origin: 0% 50%;
+        transform: scaleX(0);
+        transition: transform;
+        
+        
+        @for $i from 1 through 4{
+            &--#{$i} {
+                
+                transform: scaleX(1) ;
+                transition: transform 0.5ms*$i $easing;
+                
+            }
         &:hover .btn-card{
             &--anim{
                 width: 15%;
@@ -178,5 +193,6 @@
                 }
             }
         }
+    }
     }
 }
