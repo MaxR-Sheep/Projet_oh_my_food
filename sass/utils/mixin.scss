@@ -55,12 +55,11 @@
     box-shadow: rgba(85 85 85 / 15%) 0px 5px 10px;
 }
 
-@mixin card ($width:95% , $size: 20px){
+@mixin card ( $size: 20px){
     @include shadow();
     @include lien();
     border: 0;
     border-radius:$size;
-    width: $width;
     display: block;
     margin-bottom: $espace5*2;
 }
