@@ -122,6 +122,19 @@
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1rem;
+  transform-origin: left;
+}
+.section-card__h2--1 {
+  animation: tempo 200ms;
+}
+.section-card__h2--2 {
+  animation: tempo 400ms;
+}
+.section-card__h2--3 {
+  animation: tempo 600ms;
+}
+.section-card__h2--4 {
+  animation: tempo 800ms;
 }
 
 .card {
@@ -226,14 +239,10 @@
   padding: 0 0 0 5%;
   background-color: white;
   margin-bottom: 5%;
-  overflow: hidden;
-  transform-origin: 0% 50%;
-  transform: scaleX(0);
-  transition: transform;
+  transform-origin: left;
 }
 .card__page--1 {
-  transform: scaleX(1);
-  transition: transform 0.5ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
+  animation: tempo 500ms;
 }
 .card__page:hover .btn-card--anim {
   width: 15%;
@@ -251,8 +260,7 @@
   transform: rotate(1turn);
 }
 .card__page--2 {
-  transform: scaleX(1);
-  transition: transform 1ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
+  animation: tempo 1000ms;
 }
 .card__page:hover .btn-card--anim {
   width: 15%;
@@ -270,8 +278,7 @@
   transform: rotate(1turn);
 }
 .card__page--3 {
-  transform: scaleX(1);
-  transition: transform 1.5ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
+  animation: tempo 1500ms;
 }
 .card__page:hover .btn-card--anim {
   width: 15%;
@@ -289,8 +296,7 @@
   transform: rotate(1turn);
 }
 .card__page--4 {
-  transform: scaleX(1);
-  transition: transform 2ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
+  animation: tempo 2000ms;
 }
 .card__page:hover .btn-card--anim {
   width: 15%;
@@ -367,6 +373,14 @@
   transition: 1s cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
 
+@keyframes tempo {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /*Body*/
 body {
   max-width: 100%;

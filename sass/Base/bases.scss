@@ -96,6 +96,12 @@
         text-transform: uppercase;
         font-weight: 400;
         font-size: 1rem;
+        transform-origin: left ;
+        @for $i from 1 through 4{
+            &--#{$i} {
+                animation: tempo 200ms*$i;
+            }
+        }
     }
 }
 
@@ -162,19 +168,10 @@
         padding: 0 0 0 $espace5;
         background-color: white;
         margin-bottom: $espace5;
-        overflow: hidden;
-        
-        transform-origin: 0% 50%;
-        transform: scaleX(0);
-        transition: transform;
-        
-        
+        transform-origin: left ;
         @for $i from 1 through 4{
             &--#{$i} {
-                
-                transform: scaleX(1) ;
-                transition: transform 0.5ms*$i $easing;
-                
+                animation: tempo 500ms*$i;
             }
         &:hover .btn-card{
             &--anim{
