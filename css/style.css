@@ -125,16 +125,16 @@
   transform-origin: left;
 }
 .section-card__h2--1 {
-  animation: tempo 200ms;
+  animation: tempo 300ms;
 }
 .section-card__h2--2 {
-  animation: tempo 400ms;
-}
-.section-card__h2--3 {
   animation: tempo 600ms;
 }
+.section-card__h2--3 {
+  animation: tempo 900ms;
+}
 .section-card__h2--4 {
-  animation: tempo 800ms;
+  animation: tempo 1200ms;
 }
 
 .card {

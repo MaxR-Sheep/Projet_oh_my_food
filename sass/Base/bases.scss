@@ -99,7 +99,7 @@
         transform-origin: left ;
         @for $i from 1 through 4{
             &--#{$i} {
-                animation: tempo 200ms*$i;
+                animation: tempo 300ms*$i;
             }
         }
     }
