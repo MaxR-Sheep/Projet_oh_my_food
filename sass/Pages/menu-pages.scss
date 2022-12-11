@@ -84,11 +84,12 @@
             &--#{$i} {
                 animation: tempo 500ms*$i;
             }
+        }
         &:hover .btn-card{
             &--anim{
                 width: 15%;
                 transform: translateX(50%);
-                transition: all 600ms $easing;
+                transition: transform 600ms $easing;
             }
             &__rotate{
                 transform: scaleX(1) ;
@@ -101,6 +102,5 @@
                 }
             }
         }
-    }
     }
 }
