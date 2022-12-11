@@ -1,0 +1,106 @@
+/* Section card*/
+
+.section-card
+{
+    margin: $espace5;
+    &__h2{
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1rem;
+        transform-origin: left ;
+        @for $i from 1 through 4{
+            &--#{$i} {
+                animation: tempo 300ms*$i;
+            }
+        }
+    }
+}
+
+.card {
+    @include card ;
+    
+    &__img{
+        @include largeur(100%);
+        border-radius: $radius $radius 0 0;
+        height: 10em;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__new{
+        @include new_volant;
+    }
+    &__heart{
+        @include flex_complet(center, initial, space-between);
+        padding: 0 $espace5;
+    }
+    &__text{
+        @include flex_complet(initial, column, initial);
+        &--h3{
+            @include nowrap;
+            margin-bottom: 0;
+            font-size: 1em;
+        }
+        &--p{
+            @include nowrap;
+            margin-top: 0;
+            font-size: 0.9em;
+            
+        }
+    }
+    &__text-page{
+        @include flex_complet(initial, column, initial);
+        width: 85%;
+        &:hover{
+            width:60%;
+            transition:  width 600ms $easing;
+        }
+    }
+    &__icone{
+        position: relative;
+        &__regular{
+            position:absolute ;
+        }
+        &__solid{
+            position: relative;
+            opacity: 0;
+            background:-webkit-linear-gradient( 180deg , $color-primary, $color-secondary);
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: all 750ms;
+            &:hover{
+                opacity: 1;
+                transform: ease-in;
+            }
+        }
+    }
+    &__page{
+        @include card ;
+        @include flex_complet(center, initial, initial);
+        padding: 0 0 0 $espace5;
+        background-color: white;
+        margin-bottom: $espace5;
+        transform-origin: left ;
+        @for $i from 1 through 4{
+            &--#{$i} {
+                animation: tempo 500ms*$i;
+            }
+        &:hover .btn-card{
+            &--anim{
+                width: 15%;
+                transform: translateX(50%);
+                transition: all 600ms $easing;
+            }
+            &__rotate{
+                transform: scaleX(1) ;
+                width: 25%;
+                border-radius: 0 $radius $radius 0;
+                transition: transform 500ms $easing;
+                &--anim{ 
+                    opacity: 1;
+                    transform: rotate(1turn);
+                }
+            }
+        }
+    }
+    }
+}

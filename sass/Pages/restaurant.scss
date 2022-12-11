@@ -1,0 +1,52 @@
+/*Titre*/
+.titre{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    @include shadow;
+    &__img{
+        width: 43%;
+        margin: $espace5 $espace5*4;
+    }
+    &__arrow{
+        text-align: center;
+        text-decoration: none;
+        color: darken($fond-color, $amount: 75%);
+        font-size: 1.25em;
+    }
+}
+
+/*fonctionnement index*/
+.fonct {
+    padding: 2em 0 2em;
+    background-color: white;
+    &__marg{
+        margin: $espace5;
+    }
+    &__flex{
+        @include flex_complet(center, initial , initial);
+        @include shadow;
+        border-radius: $radius;
+        margin: $espace5;
+        width: 95%;
+        background-color: $fond-color;
+        &__icone{
+            @include icone ( grey, 5% 7% 5% 1%);
+        }
+        &:hover{
+            background-color:lighten($color: $color-primary, $amount: 35%) ;
+            & >.fa-solid{
+            color:$color-primary ;
+            }
+        }
+    }
+    &__rond{
+        @include rond (1.8em);
+        
+    }
+    &__num{
+        @include numero;
+    }
+}
