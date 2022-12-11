@@ -88,14 +88,16 @@
         &:hover .btn-card{
             &--anim{
                 width: 15%;
-                transform: translateX(50%);
+                transform: translateX(1);
                 transition: transform 600ms $easing;
+                
             }
             &__rotate{
-                transform: scaleX(1) ;
                 width: 25%;
-                border-radius: 0 $radius $radius 0;
+                transform: scaleX(1);
                 transition: transform 500ms $easing;
+                border-radius: 0 $radius $radius 0;
+                
                 &--anim{ 
                     opacity: 1;
                     transform: rotate(1turn);

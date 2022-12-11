@@ -47,7 +47,7 @@
             color: white;
             text-align: center;
             opacity: 0;
-            transition: 1s $easing;
+            transition: transform 1s $easing;
         }
     }
 }
@@ -60,3 +60,4 @@
         transform: scaleX(1);
     }
 }
+

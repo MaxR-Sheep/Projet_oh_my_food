@@ -106,7 +106,7 @@
   color: white;
   text-align: center;
   opacity: 0;
-  transition: 1s cubic-bezier(0.15, 0.18, 0.23, 0.1);
+  transition: transform 1s cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
 
 @keyframes tempo {
@@ -380,14 +380,14 @@ body {
 }
 .card__page:hover .btn-card--anim {
   width: 15%;
-  transform: translateX(50%);
+  transform: translateX(1);
   transition: transform 600ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
 .card__page:hover .btn-card__rotate {
-  transform: scaleX(1);
   width: 25%;
-  border-radius: 0 20px 20px 0;
+  transform: scaleX(1);
   transition: transform 500ms cubic-bezier(0.15, 0.18, 0.23, 0.1);
+  border-radius: 0 20px 20px 0;
 }
 .card__page:hover .btn-card__rotate--anim {
   opacity: 1;
