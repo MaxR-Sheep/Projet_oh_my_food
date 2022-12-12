@@ -1,3 +1,4 @@
+/* boutton commande*/
 @mixin boutton($size:100%) {
     border-radius: $radius;
     color: white;
@@ -17,9 +18,7 @@
         text-align:center;
     }
 }
-
-
-
+/*boutton pour card*/
 .btn-card{
     @include flex_complet(initial,initial, initial);
     &--anim{
@@ -33,13 +32,12 @@
     &__rotate{
         text-align: center;
         overflow: hidden;
-        transform: scaleX(0);
-        transform-origin: right 50%;
         width: 0;
-        height: 4.8em;
+        
         background-color: $color-tertiary;
+        border-radius: 0 $radius $radius 0;
         &:not(:last-child){
-            margin-right: $espace5;
+            
         }
         &--anim{
             margin-top: 0.6em;
@@ -51,7 +49,7 @@
         }
     }
 }
-
+/*keyframe pour rotation et slide des bouton card*/
 @keyframes tempo{
     0%{
         transform: scaleX(0);
@@ -61,3 +59,40 @@
     }
 }
 
+@keyframes slide{
+    0%{
+        width: 10%;
+        transform: translateX(0);
+    }
+    100%{
+        width: 15%;
+        transform: translateX(1);
+        transition: transform ;
+    }
+}
+
+@keyframes anim-slide{
+    0%{
+        width: 0;
+        height: 3.8em;
+        margin-left: 10%;
+    }
+    10%{
+        height: 4em;
+        border-radius: 0 $radius $radius 0;
+    }
+    13%{
+        height: 4.2em;
+    }
+    18%{
+        height: 4.6em;
+    }
+    22%{
+        height: 4.8em;
+    }
+    100%{
+        margin-left: 0;
+        height: 4.8em;
+        width: 25%;
+    }
+}

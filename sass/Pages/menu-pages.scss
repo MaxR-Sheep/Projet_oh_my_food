@@ -49,7 +49,7 @@
     }
     &__text-page{
         @include flex_complet(initial, column, initial);
-        width: 85%;
+        width: 80%;
         &:hover{
             width:60%;
             transition:  width 600ms $easing;
@@ -76,6 +76,7 @@
     &__page{
         @include card ;
         @include flex_complet(center, initial, initial);
+        height: 4.8em;
         padding: 0 0 0 $espace5;
         background-color: white;
         margin-bottom: $espace5;
@@ -87,17 +88,10 @@
         }
         &:hover .btn-card{
             &--anim{
-                width: 15%;
-                transform: translateX(1);
-                transition: transform 600ms $easing;
-                
+                animation: slide 600ms forwards $easing;
             }
             &__rotate{
-                width: 25%;
-                transform: scaleX(1);
-                transition: transform 500ms $easing;
-                border-radius: 0 $radius $radius 0;
-                
+                animation: anim-slide 500ms forwards $easing;
                 &--anim{ 
                     opacity: 1;
                     transform: rotate(1turn);
