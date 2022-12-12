@@ -25,7 +25,7 @@
 .intro__localisation--icone {
   margin-right: 5%;
 }
-.intro__h2 {
+.intro__h1 {
   width: 80%;
   hyphens: auto;
   text-align: center;
@@ -299,6 +299,9 @@ body {
   text-align: center;
   font-size: 1em;
   margin: 5px 0 0 0;
+}
+.fonct__h3 {
+  font-size: 1em;
 }
 
 /* Section card*/
