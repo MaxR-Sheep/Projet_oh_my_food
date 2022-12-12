@@ -21,7 +21,6 @@
 
 .card {
     @include card ;
-    
     &__img{
         @include largeur(100%);
         border-radius: $radius $radius 0 0;
@@ -50,7 +49,6 @@
             @include nowrap;
             margin-top: 0;
             font-size: 0.9em;
-            
         }
     }
     &__text-page{
@@ -79,7 +77,7 @@
             }
         }
     }
-    &__page{
+    &__page{/* card spéciale pour les pages*/
         @include card ;
         @include flex_complet(center, initial, initial);
         height: 4.8em;
@@ -92,7 +90,7 @@
                 animation: tempo 500ms*$i;
             }
         }
-        &:hover .btn-card{
+        &:hover .btn-card{ /* utilisation hover quand on clique sur la card*/
             &--anim{
                 animation: slide 600ms forwards $easing;
             }

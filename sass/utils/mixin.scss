@@ -5,7 +5,6 @@
 }
 
 @mixin largeur ($width:60%){
-
     width: $width;
     hyphens: auto;
     text-align: center;
@@ -15,7 +14,7 @@
     text-decoration: none;
     color: $color;
 }
-
+/* mixin partie fonctionnement*/
 @mixin numero ($color:white, $size: 1em){
     color: $color ;
     text-align: center;
@@ -51,7 +50,7 @@
 @mixin shadow {
     box-shadow: rgba(85 85 85 / 15%) 0px 5px 10px;
 }
-
+/*mixin pour les cards*/
 @mixin card ( $size: 20px){
     @include shadow();
     @include lien();
@@ -81,7 +80,7 @@
     margin-left: 65%;
     @include desktop(10%,none );
 }
-
+/* mixin breakpoint*/
 @mixin tablette ($width:100%, $margin:initial){
     @media ( min-width: 700px) and (max-width:950px) {
         width: $width;

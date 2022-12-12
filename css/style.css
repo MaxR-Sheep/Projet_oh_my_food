@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* mixin partie fonctionnement*/
+/*mixin pour les cards*/
+/* mixin breakpoint*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
 /* intro index et page*/
 .intro {
@@ -422,7 +426,7 @@ body {
   opacity: 1;
   transform: ease-in;
 }
-.card__page {
+.card__page { /* card spéciale pour les pages*/
   box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
   text-decoration: none;
   color: black;
@@ -452,6 +456,7 @@ body {
 .card__page--4 {
   animation: tempo 2000ms;
 }
+.card__page:hover .btn-card { /* utilisation hover quand on clique sur la card*/ }
 .card__page:hover .btn-card--anim {
   animation: slide 600ms forwards cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
