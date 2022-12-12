@@ -28,6 +28,10 @@ body{
 .footer{
     background-color: darken($color: darkgrey, $amount: 45%);
     height: 15em;
+    @media (min-width:950px) {
+        height: 20em;
+        
+    }
     &__titre{
         @include titre(1.1em,start);
         color:lighten($color: grey, $amount: 45%);

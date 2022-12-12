@@ -190,6 +190,11 @@ body {
   background-color: #363636;
   height: 15em;
 }
+@media (min-width: 950px) {
+  .footer {
+    height: 20em;
+  }
+}
 .footer__titre {
   font-family: "Shrikhand";
   font-size: 1.1em;
