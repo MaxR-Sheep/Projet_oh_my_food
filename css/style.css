@@ -84,6 +84,7 @@
 }
 .btn-card--anim {
   width: 10%;
+  margin: 0 0 5% 5%;
   font-size: 0.9em;
   font-weight: bold;
   align-self: end;
