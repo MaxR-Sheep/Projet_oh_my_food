@@ -78,7 +78,9 @@
     position: absolute;
     margin: 4%;
     margin-left: 65%;
-    @include desktop(10%,none );
+    @media (min-width:950px) {
+        width: 10%;
+    };
 }
 /* mixin breakpoint*/
 @mixin tablette ($width:100%, $margin:initial){

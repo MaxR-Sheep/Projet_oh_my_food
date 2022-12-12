@@ -73,11 +73,10 @@
             transition: all 750ms;
             &:hover{
                 opacity: 1;
-                transform: ease-in;
             }
         }
     }
-    &__page{/* card spéciale pour les pages*/
+    &__page{
         @include card ;
         @include flex_complet(center, initial, initial);
         height: 4.8em;
@@ -90,7 +89,7 @@
                 animation: tempo 500ms*$i;
             }
         }
-        &:hover .btn-card{ /* utilisation hover quand on clique sur la card*/
+        &:hover .btn-card{ 
             &--anim{
                 animation: slide 600ms forwards $easing;
             }

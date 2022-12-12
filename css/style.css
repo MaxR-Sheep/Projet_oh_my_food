@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* mixin partie fonctionnement*/
 /*mixin pour les cards*/
 /* mixin breakpoint*/
@@ -122,12 +121,9 @@
 @keyframes slide {
   0% {
     width: 10%;
-    transform: translateX(0);
   }
   100% {
     width: 15%;
-    transform: translateX(1);
-    transition: transform;
   }
 }
 @keyframes anim-slide {
@@ -367,7 +363,6 @@ body {
 @media (min-width: 950px) {
   .card__new {
     width: 10%;
-    margin: none;
   }
 }
 .card__heart {
@@ -424,9 +419,8 @@ body {
 }
 .card__icone__solid:hover {
   opacity: 1;
-  transform: ease-in;
 }
-.card__page { /* card spéciale pour les pages*/
+.card__page {
   box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
   text-decoration: none;
   color: black;
@@ -456,7 +450,6 @@ body {
 .card__page--4 {
   animation: tempo 2000ms;
 }
-.card__page:hover .btn-card { /* utilisation hover quand on clique sur la card*/ }
 .card__page:hover .btn-card--anim {
   animation: slide 600ms forwards cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
