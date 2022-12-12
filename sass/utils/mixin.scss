@@ -22,7 +22,7 @@
     margin: 5px 0 0 0 ;
 }
 
-@mixin  rond($size: 2em) {
+@mixin  rond($size: 1.8em) {
     background-color: $color-primary;
     height: $size;
     width: $size;
