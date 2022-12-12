@@ -1,12 +1,37 @@
-/*Body*/
-body{
-
+/* intro index et page*/
+.intro{
+    @include flex_complet(center,column,center);
     background-color: $fond-color;
-    font-family: 'Roboto';
-    display: block;
-    margin: 0;
-    @include tablette;
-    @include desktop;
+    padding-bottom: $espace5;
+    &__localisation{
+        @include flex_complet(center,initial,initial);
+        background-color: darken($fond-color, $amount: 10%);
+        width: 100%;
+        font-weight: 600;
+        justify-content: center;
+        color: darken($fond-color, $amount: 70%);
+        &--icone{
+            margin-right: $espace5;
+        }
+    }
+    &__h1 {
+        @include largeur(80%);
+    }
+    &__p{
+        @include largeur(90%);
+    }
+    &__page{
+        @include flex_complet(center, initial, space-between);
+        border-radius: $radiustop $radiustop 0 0;
+        position: relative;
+        padding:  $espace5 $espace5 0;
+        margin-top: -2.5em;
+        background-color: $fond-color;
+        &__h1{
+            @include titre(1.65em ,initial);
+            background-color: $fond-color;
+        }
+    }
 }
 
 .img__page{
@@ -21,7 +46,6 @@ body{
     height: 3px;
     background-color: $color-tertiary;
     margin: -0.5em 0 2em;
-
 }
 
 /* footer*/
@@ -30,7 +54,6 @@ body{
     height: 15em;
     @media (min-width:950px) {
         height: 20em;
-        
     }
     &__titre{
         @include titre(1.1em,start);

@@ -1,0 +1,22 @@
+/* animations slide des cards*/
+.page{
+    &__page{
+        @for $i from 1 through 4{
+            &--#{$i} {
+                animation: tempo 500ms*$i;
+            }
+        }
+        &:hover .btn-card{ /*animation pour slide vert menthe et validé*/
+            &--anim{
+                animation: slide 600ms forwards $easing;
+            }
+            &__rotate{
+                animation: anim-slide 500ms forwards $easing;
+                &--anim{ 
+                    opacity: 1;
+                    transform: rotate(1turn);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/* Icone coeur solid et transparent*/
+.card{
+    &__icone{
+        position: relative;
+        &__regular{
+            position:absolute ;
+        }
+        &__solid{
+            position: relative;
+            opacity: 0;
+            background:-webkit-linear-gradient( 180deg , $color-primary, $color-secondary);
+            -webkit-background-clip: text;
+            color: transparent;
+            transition: all 750ms;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}

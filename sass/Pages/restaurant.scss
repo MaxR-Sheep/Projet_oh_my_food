@@ -30,6 +30,7 @@
         @include shadow;
         border-radius: $radius;
         margin: $espace5;
+        height: 4.5em;
         width: 95%;
         background-color: $fond-color;
         @include desktop(85%, $espace5);
