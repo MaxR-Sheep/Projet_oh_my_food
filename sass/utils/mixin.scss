@@ -14,14 +14,14 @@
     text-decoration: none;
     color: $color;
 }
-/* mixin partie fonctionnement*/
+/* mixin partie fonctionnement pour les numero*/
 @mixin numero ($color:white, $size: 1em){
     color: $color ;
     text-align: center;
     font-size: $size;
     margin: 5px 0 0 0 ;
 }
-
+/* mixin pour les rond au tour des numero*/
 @mixin  rond($size: 1.8em) {
     background-color: $color-primary;
     height: $size;
@@ -30,7 +30,7 @@
     position: relative;
     left: -0.9em;
 }
-
+/*mixin pour avoir la bi  couleur avec un angle*/
 @mixin couleur {
     background: linear-gradient(-5deg, $color-primary, $color-secondary);
 }

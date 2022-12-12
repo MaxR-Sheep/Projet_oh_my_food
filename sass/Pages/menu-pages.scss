@@ -59,23 +59,6 @@
             transition:  width 600ms $easing;
         }
     }
-    &__icone{
-        position: relative;
-        &__regular{
-            position:absolute ;
-        }
-        &__solid{
-            position: relative;
-            opacity: 0;
-            background:-webkit-linear-gradient( 180deg , $color-primary, $color-secondary);
-            -webkit-background-clip: text;
-            color: transparent;
-            transition: all 750ms;
-            &:hover{
-                opacity: 1;
-            }
-        }
-    }
     &__page{
         @include card ;
         @include flex_complet(center, initial, initial);
@@ -84,22 +67,7 @@
         background-color: white;
         margin-bottom: $espace5;
         transform-origin: left ;
-        @for $i from 1 through 4{
-            &--#{$i} {
-                animation: tempo 500ms*$i;
-            }
-        }
-        &:hover .btn-card{ 
-            &--anim{
-                animation: slide 600ms forwards $easing;
-            }
-            &__rotate{
-                animation: anim-slide 500ms forwards $easing;
-                &--anim{ 
-                    opacity: 1;
-                    transform: rotate(1turn);
-                }
-            }
-        }
+        
+        
     }
 }
