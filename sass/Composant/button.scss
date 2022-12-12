@@ -28,7 +28,6 @@
         font-weight: bold;
         align-self: end;
         overflow: hidden;
-
     }
     &__rotate{
         text-align: center;
@@ -36,9 +35,6 @@
         width: 0;
         background-color: $color-tertiary;
         border-radius: 0 $radius $radius 0;
-        &:not(:last-child){
-            
-        }
         &--anim{
             margin-top: 0.6em;
             transform:  rotate(0turn);
