@@ -84,12 +84,11 @@
 }
 .btn-card--anim {
   width: 10%;
-  margin: 0 0 5% 5%;
+  margin-left: 5%;
   font-size: 0.9em;
   font-weight: bold;
   align-self: end;
   overflow: hidden;
-  transform: translateX(0);
 }
 .btn-card__rotate {
   text-align: center;
@@ -154,11 +153,22 @@
 }
 /*Body*/
 body {
-  max-width: 100%;
   background-color: #f8f8f8;
   font-family: "Roboto";
   display: block;
   margin: 0;
+}
+@media (min-width: 700px) and (max-width: 950px) {
+  body {
+    width: 100%;
+    margin: initial;
+  }
+}
+@media (min-width: 950px) {
+  body {
+    width: 100%;
+    margin: initial;
+  }
 }
 
 .img__page {
@@ -249,9 +259,21 @@ body {
   width: 95%;
   background-color: #f8f8f8;
 }
+@media (min-width: 950px) {
+  .fonct__flex {
+    width: 85%;
+    margin: 5%;
+  }
+}
 .fonct__flex__icone {
   color: grey;
   margin: 5% 7% 5% 1%;
+}
+@media (min-width: 950px) {
+  .fonct__flex__icone {
+    width: initial;
+    margin: 5%;
+  }
 }
 .fonct__flex:hover {
   background-color: #f2eafb;
@@ -277,6 +299,11 @@ body {
 /* Section card*/
 .section-card {
   margin: 5%;
+}
+@media (min-width: 950px) {
+  .section-card {
+    margin: 10%;
+  }
 }
 .section-card__h2 {
   text-transform: uppercase;
@@ -315,6 +342,11 @@ body {
   object-fit: cover;
   object-position: center;
 }
+@media (min-width: 700px) {
+  .card__img {
+    height: 20em;
+  }
+}
 .card__new {
   color: #2c9c81;
   background-color: #99E2D0;
@@ -327,6 +359,12 @@ body {
   position: absolute;
   margin: 4%;
   margin-left: 65%;
+}
+@media (min-width: 950px) {
+  .card__new {
+    width: 10%;
+    margin: none;
+  }
 }
 .card__heart {
   display: flex;

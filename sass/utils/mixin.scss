@@ -17,12 +17,10 @@
 }
 
 @mixin numero ($color:white, $size: 1em){
-    
     color: $color ;
     text-align: center;
     font-size: $size;
     margin: 5px 0 0 0 ;
-    
 }
 
 @mixin  rond($size: 2em) {
@@ -32,7 +30,6 @@
     border-radius: $radius;
     position: relative;
     left: -0.9em;
-    
 }
 
 @mixin couleur {
@@ -82,5 +79,19 @@
     position: absolute;
     margin: 4%;
     margin-left: 65%;
+    @include desktop(10%,none );
 }
 
+@mixin tablette ($width:100%, $margin:initial){
+    @media ( min-width: 700px) and (max-width:950px) {
+        width: $width;
+        margin: $margin;
+    }
+}
+
+@mixin desktop ($width:100%, $margin:initial){
+    @media ( min-width: 950px)  {
+        width: $width;
+        margin: $margin;
+    }
+}

@@ -1,10 +1,12 @@
 /*Body*/
 body{
-    max-width: $mobile;
+
     background-color: $fond-color;
     font-family: 'Roboto';
     display: block;
     margin: 0;
+    @include tablette;
+    @include desktop;
 }
 
 .img__page{

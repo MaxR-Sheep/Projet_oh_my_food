@@ -23,18 +23,17 @@
     @include flex_complet(initial,initial, initial);
     &--anim{
         width: 10%;
-        margin: 0 0 $espace5 $espace5;
+        margin-left: $espace5;
         font-size: 0.9em;
         font-weight: bold;
         align-self: end;
         overflow: hidden;
-        transform: translateX(0);
+
     }
     &__rotate{
         text-align: center;
         overflow: hidden;
         width: 0;
-        
         background-color: $color-tertiary;
         border-radius: 0 $radius $radius 0;
         &:not(:last-child){
