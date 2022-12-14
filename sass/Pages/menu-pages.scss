@@ -54,7 +54,7 @@
         }
         &--p{
             @include nowrap;
-            @include balisep;
+            @include balisep (0 0 1em);
         }
     }
     &__text-page{

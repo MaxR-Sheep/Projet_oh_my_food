@@ -218,11 +218,12 @@ body {
 }
 .footer__text--p {
   margin: 0;
-  font-size: 0.9;
+  font-size: 0.9em;
 }
 .footer__text--contact {
   text-decoration: none;
   color: white;
+  font-size: 0.9em;
 }
 
 /* boutton commande*/
@@ -514,8 +515,8 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0;
-  font-size: 0.9;
+  margin: 0 0 1em;
+  font-size: 0.9em;
 }
 .card__text-page {
   display: flex;

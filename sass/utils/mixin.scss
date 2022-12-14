@@ -61,7 +61,7 @@
     margin-bottom: $espace5*2;
 }
 /* pour les balise p*/
-@mixin balisep ($margin:0 ,$size:0.9){
+@mixin balisep ($margin:0 ,$size:0.9em){
     margin: $margin;
     font-size: $size;
 }

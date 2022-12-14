@@ -39,6 +39,7 @@ body{
         }
         &--contact{
             @include lien ($textcolor);
+            font-size: 0.9em;
         }
     }
 }
