@@ -50,10 +50,8 @@
         height: 4.5em;
         width: 95%;
         background-color: $fond-color;
-        @include desktop(85%, $espace5);
         &__icone{
             @include icone ( grey, 5% 7% 5% 1%);
-            @include desktop(initial,$espace5);
         }
         &:hover{
             background-color:lighten($color: $color-primary, $amount: 35%) ;

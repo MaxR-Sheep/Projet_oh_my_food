@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*pour le Titre du footer*/
+/* utiliser pour les barre de fonctionnement*/
 /*Pour que les lien reste normal*/
 /*Partie fonctionnement pour les numero*/
 /*Pour les rond au tour des numero*/
@@ -8,6 +9,7 @@
 /* Les icone des fonctionnements*/
 /*Ombre */
 /*Les cards de base*/
+/* pour les balise p*/
 /*Permettre d'avoir les ... dans les cards*/
 /* Logo nouveaux sur les cards*/
 /* breakpoint*/
@@ -175,18 +177,12 @@ body {
   font-family: "Roboto";
   display: block;
   margin: 0;
+  width: 100%;
 }
-@media (min-width: 700px) and (max-width: 950px) {
-  body {
-    width: 100%;
-    margin: initial;
-  }
-}
-@media (min-width: 950px) {
+@media (min-width: 700px) {
   body {
     width: 100%;
     margin: 0;
-    padding: 0;
   }
 }
 
@@ -195,36 +191,24 @@ body {
   background-color: #363636;
   height: 15em;
 }
-@media (min-width: 950px) {
-  .footer {
-    height: 20em;
-  }
-}
 .footer__titre {
   font-family: "Shrikhand";
   font-size: 1.1em;
   text-align: start;
-  color: #f3f3f3;
-  padding: 5%;
+  color: white;
+  padding: 1em 5% 0.5em;
   margin: 0;
-  text-rendering: auto;
-}
-@media (min-width: 950px) {
-  .footer__titre {
-    width: 100%;
-    margin: 0;
-    padding: 2em 5%;
-  }
+  font-weight: 100;
 }
 .footer__text {
   margin: 0 5%;
   text-decoration: none;
-  color: #f3f3f3;
-  line-height: 10%;
+  color: white;
+  line-height: 1.5em;
 }
 .footer__text--icone {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-direction: initial;
   justify-content: start;
 }
@@ -232,9 +216,13 @@ body {
   font-size: 0.8em;
   margin-right: 1em;
 }
+.footer__text--p {
+  margin: 0;
+  font-size: 0.9;
+}
 .footer__text--contact {
   text-decoration: none;
-  color: #f3f3f3;
+  color: white;
 }
 
 /* boutton commande*/
@@ -377,23 +365,9 @@ body {
   width: 95%;
   background-color: #f8f8f8;
 }
-@media (min-width: 950px) {
-  .fonct__flex {
-    width: 85%;
-    margin: 5%;
-    padding: 0;
-  }
-}
 .fonct__flex__icone {
   color: grey;
   margin: 5% 7% 5% 1%;
-}
-@media (min-width: 950px) {
-  .fonct__flex__icone {
-    width: initial;
-    margin: 5%;
-    padding: 0;
-  }
 }
 .fonct__flex:hover {
   background-color: #f2eafb;
@@ -453,12 +427,12 @@ body {
   padding: 2%;
   text-align: center;
   position: absolute;
-  margin: 4%;
-  margin-left: 65%;
+  margin: 4% 65%;
 }
-@media (min-width: 950px) {
+@media (min-width: 700px) {
   .card__new {
     width: 10%;
+    margin: 4% 65%;
   }
 }
 .card__heart {
@@ -503,11 +477,6 @@ body {
 .section-card {
   margin: 5%;
 }
-@media (min-width: 950px) {
-  .section-card {
-    margin: 10%;
-  }
-}
 .section-card__h2 {
   text-transform: uppercase;
   font-weight: 400;
@@ -545,8 +514,8 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-top: 0;
-  font-size: 0.9em;
+  margin: 0;
+  font-size: 0.9;
 }
 .card__text-page {
   display: flex;

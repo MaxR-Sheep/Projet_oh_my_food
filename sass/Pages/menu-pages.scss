@@ -31,9 +31,6 @@
 .section-card
 {
     margin: $espace5;
-    @media (min-width:950px) {
-        margin: $espace5*2;
-    }
     &__h2{
         text-transform: uppercase;
         font-weight: 400;
@@ -57,8 +54,7 @@
         }
         &--p{
             @include nowrap;
-            margin-top: 0;
-            font-size: 0.9em;
+            @include balisep;
         }
     }
     &__text-page{

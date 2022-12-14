@@ -6,39 +6,39 @@ body{
     font-family: 'Roboto';
     display: block;
     margin: 0;
+    width: 100%;
     @include tablette;
-    @include desktop;
+
 }
 
 /* footer*/
 .footer{
     background-color: darken($color: darkgrey, $amount: 45%);
     height: 15em;
-    @media (min-width:950px) {
-        height: 20em;
-    }
     &__titre{
         @include titre(1.1em,start);
-        color:lighten($color: grey, $amount: 45%);
-        padding: $espace5  ;
+        color:$textcolor;
+        padding:  1em $espace5 0.5em  ;
         margin: 0;
-        text-rendering: auto;
-        @include desktop(100%,0,2em $espace5);
+        font-weight: 100;
     }
     &__text{
         margin: 0 $espace5;
         text-decoration: none;
-        color:lighten($color: grey, $amount: 45%);
-        line-height: $espace5*2;
+        color:$textcolor;
+        line-height: 1.5em;
         &--icone{
-            @include flex_complet(center, initial, start);
+            @include flex_complet(baseline, initial, start);
             &--i{
                 font-size: 0.8em;
                 margin-right: 1em;
             }
         }
+        &--p{
+            @include balisep;
+        }
         &--contact{
-            @include lien (lighten($color: grey, $amount: 45%));
+            @include lien ($textcolor);
         }
     }
 }
