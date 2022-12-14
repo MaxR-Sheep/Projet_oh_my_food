@@ -11,6 +11,29 @@
         margin: $espace5 $espace5*4;
     }
 }
+/*Intro de l'index*/
+.intro{
+    @include flex_complet(center,column,center);
+    background-color: $fond-color;
+    padding-bottom: $espace5;
+    &__localisation{
+        @include flex_complet(center,initial,initial);
+        background-color: darken($fond-color, $amount: 10%);
+        width: 100%;
+        font-weight: 600;
+        justify-content: center;
+        color: darken($fond-color, $amount: 70%);
+        &--icone{
+            margin-right: $espace5;
+        }
+    }
+    &__h1 {
+        @include largeur(80%);
+    }
+    &__p{
+        @include largeur(90%);
+    }
+}
 
 /*fonctionnement index*/
 .fonct {

@@ -1,38 +1,4 @@
-/* intro index et page*/
-.intro{
-    @include flex_complet(center,column,center);
-    background-color: $fond-color;
-    padding-bottom: $espace5;
-    &__localisation{
-        @include flex_complet(center,initial,initial);
-        background-color: darken($fond-color, $amount: 10%);
-        width: 100%;
-        font-weight: 600;
-        justify-content: center;
-        color: darken($fond-color, $amount: 70%);
-        &--icone{
-            margin-right: $espace5;
-        }
-    }
-    &__h1 {
-        @include largeur(80%);
-    }
-    &__p{
-        @include largeur(90%);
-    }
-    &__page{
-        @include flex_complet(center, initial, space-between);
-        border-radius: $radiustop $radiustop 0 0;
-        position: relative;
-        padding:  $espace5 $espace5 0;
-        margin-top: -2.5em;
-        background-color: $fond-color;
-        &__h1{
-            @include titre(1.65em ,initial);
-            background-color: $fond-color;
-        }
-    }
-}
+
 /* image sur les page */
 .img__page{
     width: 100%;
@@ -48,34 +14,3 @@
     margin: -0.5em 0 2em;
 }
 
-/* footer*/
-.footer{
-    background-color: darken($color: darkgrey, $amount: 45%);
-    height: 15em;
-    @media (min-width:950px) {
-        height: 20em;
-    }
-    &__titre{
-        @include titre(1.1em,start);
-        color:lighten($color: grey, $amount: 45%);
-        padding: $espace5  ;
-        margin: 0;
-        text-rendering: auto;
-    }
-    &__text{
-        margin: 0 $espace5;
-        text-decoration: none;
-        color:lighten($color: grey, $amount: 45%);
-        line-height: $espace5*2;
-        &--icone{
-            @include flex_complet(center, initial, start);
-            &--i{
-                font-size: 0.8em;
-                margin-right: 1em;
-            }
-        }
-        &--contact{
-            @include lien (lighten($color: grey, $amount: 45%));
-        }
-    }
-}

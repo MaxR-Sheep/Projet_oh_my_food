@@ -11,6 +11,22 @@
     }
 }
 
+/* intro index et page*/
+.intro{
+    &__page{
+        @include flex_complet(center, initial, space-between);
+        border-radius: $radiustop $radiustop 0 0;
+        position: relative;
+        padding:  $espace5 $espace5 0;
+        margin-top: -2.5em;
+        background-color: $fond-color;
+        &__h1{
+            @include titre(1.65em ,initial);
+            background-color: $fond-color;
+        }
+    }
+}
+
 /* Section card*/
 .section-card
 {

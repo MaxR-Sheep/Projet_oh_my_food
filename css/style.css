@@ -185,8 +185,56 @@ body {
 @media (min-width: 950px) {
   body {
     width: 100%;
-    margin: initial;
+    margin: 0;
+    padding: 0;
   }
+}
+
+/* footer*/
+.footer {
+  background-color: #363636;
+  height: 15em;
+}
+@media (min-width: 950px) {
+  .footer {
+    height: 20em;
+  }
+}
+.footer__titre {
+  font-family: "Shrikhand";
+  font-size: 1.1em;
+  text-align: start;
+  color: #f3f3f3;
+  padding: 5%;
+  margin: 0;
+  text-rendering: auto;
+}
+@media (min-width: 950px) {
+  .footer__titre {
+    width: 100%;
+    margin: 0;
+    padding: 2em 5%;
+  }
+}
+.footer__text {
+  margin: 0 5%;
+  text-decoration: none;
+  color: #f3f3f3;
+  line-height: 10%;
+}
+.footer__text--icone {
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: start;
+}
+.footer__text--icone--i {
+  font-size: 0.8em;
+  margin-right: 1em;
+}
+.footer__text--contact {
+  text-decoration: none;
+  color: #f3f3f3;
 }
 
 /* boutton commande*/
@@ -245,7 +293,37 @@ body {
   transition: transform 1s cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
 
-/* intro index et page*/
+/* image sur les page */
+.img__page {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  height: 16em;
+}
+
+/* trait sous entrée plat desserts*/
+.trait {
+  width: 2.5em;
+  height: 3px;
+  background-color: #99E2D0;
+  margin: -0.5em 0 2em;
+}
+
+/*Titre*/
+.titre {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
+}
+.titre__img {
+  width: 43%;
+  margin: 5% 20%;
+}
+
+/*Intro de l'index*/
 .intro {
   display: flex;
   align-items: center;
@@ -278,93 +356,6 @@ body {
   hyphens: auto;
   text-align: center;
 }
-.intro__page {
-  display: flex;
-  align-items: center;
-  flex-direction: initial;
-  justify-content: space-between;
-  border-radius: 35px 35px 0 0;
-  position: relative;
-  padding: 5% 5% 0;
-  margin-top: -2.5em;
-  background-color: #f8f8f8;
-}
-.intro__page__h1 {
-  font-family: "Shrikhand";
-  font-size: 1.65em;
-  text-align: initial;
-  background-color: #f8f8f8;
-}
-
-/* image sur les page */
-.img__page {
-  width: 100%;
-  position: relative;
-  object-fit: cover;
-  height: 16em;
-}
-
-/* trait sous entrée plat desserts*/
-.trait {
-  width: 2.5em;
-  height: 3px;
-  background-color: #99E2D0;
-  margin: -0.5em 0 2em;
-}
-
-/* footer*/
-.footer {
-  background-color: #363636;
-  height: 15em;
-}
-@media (min-width: 950px) {
-  .footer {
-    height: 20em;
-  }
-}
-.footer__titre {
-  font-family: "Shrikhand";
-  font-size: 1.1em;
-  text-align: start;
-  color: #f3f3f3;
-  padding: 5%;
-  margin: 0;
-  text-rendering: auto;
-}
-.footer__text {
-  margin: 0 5%;
-  text-decoration: none;
-  color: #f3f3f3;
-  line-height: 10%;
-}
-.footer__text--icone {
-  display: flex;
-  align-items: center;
-  flex-direction: initial;
-  justify-content: start;
-}
-.footer__text--icone--i {
-  font-size: 0.8em;
-  margin-right: 1em;
-}
-.footer__text--contact {
-  text-decoration: none;
-  color: #f3f3f3;
-}
-
-/*Titre*/
-.titre {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  align-items: center;
-  box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
-}
-.titre__img {
-  width: 43%;
-  margin: 5% 20%;
-}
 
 /*fonctionnement index*/
 .fonct {
@@ -390,6 +381,7 @@ body {
   .fonct__flex {
     width: 85%;
     margin: 5%;
+    padding: 0;
   }
 }
 .fonct__flex__icone {
@@ -400,6 +392,7 @@ body {
   .fonct__flex__icone {
     width: initial;
     margin: 5%;
+    padding: 0;
   }
 }
 .fonct__flex:hover {
@@ -485,6 +478,25 @@ body {
 }
 .titre__arrow:hover {
   color: #9356DC;
+}
+
+/* intro index et page*/
+.intro__page {
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: space-between;
+  border-radius: 35px 35px 0 0;
+  position: relative;
+  padding: 5% 5% 0;
+  margin-top: -2.5em;
+  background-color: #f8f8f8;
+}
+.intro__page__h1 {
+  font-family: "Shrikhand";
+  font-size: 1.65em;
+  text-align: initial;
+  background-color: #f8f8f8;
 }
 
 /* Section card*/

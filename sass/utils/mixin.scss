@@ -91,9 +91,10 @@
     }
 }
 
-@mixin desktop ($width:100%, $margin:initial){
+@mixin desktop ($width:100%, $margin:0, $padd:0){
     @media ( min-width: 950px)  {
         width: $width;
         margin: $margin;
+        padding:$padd;
     }
 }
