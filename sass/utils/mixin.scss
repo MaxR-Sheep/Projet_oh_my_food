@@ -1,3 +1,4 @@
+/*pour le Titre du footer*/
 @mixin titre ($size: large, $align: center) {
     font-family: 'Shrikhand';
     font-size: $size;
@@ -9,19 +10,19 @@
     hyphens: auto;
     text-align: center;
 }
-
+/*Pour que les lien reste normal*/
 @mixin lien ($color:black) {
     text-decoration: none;
     color: $color;
 }
-/* mixin partie fonctionnement pour les numero*/
+/*Partie fonctionnement pour les numero*/
 @mixin numero ($color:white, $size: 1em){
     color: $color ;
     text-align: center;
     font-size: $size;
     margin: 5px 0 0 0 ;
 }
-/* mixin pour les rond au tour des numero*/
+/*Pour les rond au tour des numero*/
 @mixin  rond($size: 1.8em) {
     background-color: $color-primary;
     height: $size;
@@ -30,27 +31,27 @@
     position: relative;
     left: -0.9em;
 }
-/*mixin pour avoir la bi  couleur avec un angle*/
+/*Pour avoir la bi couleur avec un angle*/
 @mixin couleur {
     background: linear-gradient(-5deg, $color-primary, $color-secondary);
 }
-
+/*Flexbox utilisation complet*/
 @mixin flex_complet($itemalign:center,$direction:column,$judtiftcontent:center,){
     display: flex;
     align-items: $itemalign;
     flex-direction: $direction;
     justify-content: $judtiftcontent;
 }
-
+/* Les icone des fonctionnements*/
 @mixin icone ($color:grey,$size: $espace5){
     color: $color;
     margin: $size;
 }
-
+/*Ombre */
 @mixin shadow {
     box-shadow: rgba(85 85 85 / 15%) 0px 5px 10px;
 }
-/*mixin pour les cards*/
+/*Les cards de base*/
 @mixin card ( $size: 20px){
     @include shadow();
     @include lien();
@@ -59,13 +60,13 @@
     display: block;
     margin-bottom: $espace5*2;
 }
-
+/*Permettre d'avoir les ... dans les cards*/
 @mixin nowrap {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+/* Logo nouveaux sur les cards*/
 @mixin new_volant($color: $color-tertiary) {
     color:darken($color, 35%);
     background-color:$color;
@@ -82,7 +83,7 @@
         width: 10%;
     };
 }
-/* mixin breakpoint*/
+/* breakpoint*/
 @mixin tablette ($width:100%, $margin:initial){
     @media ( min-width: 700px) and (max-width:950px) {
         width: $width;

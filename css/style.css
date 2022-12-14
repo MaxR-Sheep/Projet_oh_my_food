@@ -1,35 +1,83 @@
 @charset "UTF-8";
-/* mixin partie fonctionnement pour les numero*/
-/* mixin pour les rond au tour des numero*/
-/*mixin pour avoir la bi  couleur avec un angle*/
-/*mixin pour les cards*/
-/* mixin breakpoint*/
+/*pour le Titre du footer*/
+/*Pour que les lien reste normal*/
+/*Partie fonctionnement pour les numero*/
+/*Pour les rond au tour des numero*/
+/*Pour avoir la bi couleur avec un angle*/
+/*Flexbox utilisation complet*/
+/* Les icone des fonctionnements*/
+/*Ombre */
+/*Les cards de base*/
+/*Permettre d'avoir les ... dans les cards*/
+/* Logo nouveaux sur les cards*/
+/* breakpoint*/
 /* animations slide des cards*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
-.page__page--1 {
+.card__page--1 {
   animation: tempo 500ms;
 }
-.page__page--2 {
+.card__page--2 {
   animation: tempo 1000ms;
 }
-.page__page--3 {
+.card__page--3 {
   animation: tempo 1500ms;
 }
-.page__page--4 {
+.card__page--4 {
   animation: tempo 2000ms;
 }
-.page__page:hover .btn-card { /*animation pour slide vert menthe et validé*/ }
-.page__page:hover .btn-card--anim {
+.card__page:hover .btn-card--anim {
   animation: slide 600ms forwards cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
-.page__page:hover .btn-card__rotate {
+.card__page:hover .btn-card__rotate {
   animation: anim-slide 500ms forwards cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
-.page__page:hover .btn-card__rotate--anim {
+.card__page:hover .btn-card__rotate--anim {
   opacity: 1;
   transform: rotate(1turn);
 }
 
+/*keyframe pour rotation et slide des bouton card*/
+@keyframes tempo {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes slide {
+  0% {
+    width: 10%;
+  }
+  100% {
+    width: 15%;
+  }
+}
+@keyframes anim-slide {
+  0% {
+    width: 0;
+    height: 3.8em;
+    margin-left: 10%;
+  }
+  5% {
+    height: 4em;
+    border-radius: 0 20px 20px 0;
+  }
+  10% {
+    height: 4.2em;
+  }
+  15% {
+    height: 4.6em;
+  }
+  18% {
+    height: 4.8em;
+  }
+  100% {
+    margin-left: 0;
+    height: 4.8em;
+    width: 25%;
+  }
+}
 /* Icone coeur solid et transparent*/
 .card__icone {
   position: relative;
@@ -49,6 +97,81 @@
   opacity: 1;
 }
 
+/*fond chargement avec keyframe*/
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: initial;
+  justify-content: center;
+  background: #f8f8f8;
+  opacity: 0.95;
+  position: fixed;
+  z-index: 1;
+  animation: load;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes load {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: transform;
+    visibility: hidden;
+  }
+}
+/* Icone bouteille pour le chargement avec keyframe*/
+.loader {
+  width: 40px;
+  height: 98px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  color: #9356DC;
+  border-radius: 20px 20px 4px 4px;
+  background: #99E2D0;
+  animation: fill 1.5s linear 2 alternate;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -95%);
+  border: 2px solid #FFF;
+  border-bottom: none;
+  background: #99E2D0;
+  width: 15px;
+  height: 35px;
+  animation: fillNeck 1.5s linear 2 alternate;
+}
+
+@keyframes fill {
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  50%, 100% {
+    box-shadow: 0 -98px inset;
+  }
+}
+@keyframes fillNeck {
+  0%, 50% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -20px inset;
+  }
+}
 /*Body et breakpoint tablette desktop*/
 body {
   background-color: #f8f8f8;
@@ -125,48 +248,6 @@ body {
   transition: transform 1s cubic-bezier(0.15, 0.18, 0.23, 0.1);
 }
 
-/*keyframe pour rotation et slide des bouton card*/
-@keyframes tempo {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes slide {
-  0% {
-    width: 10%;
-  }
-  100% {
-    width: 15%;
-  }
-}
-@keyframes anim-slide {
-  0% {
-    width: 0;
-    height: 3.8em;
-    margin-left: 10%;
-  }
-  5% {
-    height: 4em;
-    border-radius: 0 20px 20px 0;
-  }
-  10% {
-    height: 4.2em;
-  }
-  15% {
-    height: 4.6em;
-  }
-  18% {
-    height: 4.8em;
-  }
-  100% {
-    margin-left: 0;
-    height: 4.8em;
-    width: 25%;
-  }
-}
 /* intro index et page*/
 .intro {
   display: flex;
@@ -218,6 +299,7 @@ body {
   background-color: #f8f8f8;
 }
 
+/* image sur les page */
 .img__page {
   width: 100%;
   position: relative;
@@ -225,6 +307,7 @@ body {
   height: 16em;
 }
 
+/* trait sous entrée plat desserts*/
 .trait {
   width: 2.5em;
   height: 3px;
