@@ -118,12 +118,9 @@
   0% {
     opacity: 1;
     visibility: visible;
-    transform: rotate(0);
   }
   100% {
     opacity: 0;
-    transform: rotate(360deg);
-    transition: transform;
     visibility: hidden;
   }
 }
@@ -368,12 +365,6 @@ body {
   width: 43%;
   margin: 5% 20%;
 }
-.titre__arrow {
-  text-align: center;
-  text-decoration: none;
-  color: #393939;
-  font-size: 1.25em;
-}
 
 /*fonctionnement index*/
 .fonct {
@@ -435,34 +426,7 @@ body {
   font-size: 1em;
 }
 
-/* Section card*/
-.section-card {
-  margin: 5%;
-}
-@media (min-width: 950px) {
-  .section-card {
-    margin: 10%;
-  }
-}
-.section-card__h2 {
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1rem;
-  transform-origin: left;
-}
-.section-card__h2--1 {
-  animation: tempo 300ms;
-}
-.section-card__h2--2 {
-  animation: tempo 600ms;
-}
-.section-card__h2--3 {
-  animation: tempo 900ms;
-}
-.section-card__h2--4 {
-  animation: tempo 1200ms;
-}
-
+/* Card pour les restaurants*/
 .card {
   box-shadow: rgba(85, 85, 85, 0.15) 0px 5px 10px;
   text-decoration: none;
@@ -511,6 +475,47 @@ body {
   justify-content: space-between;
   padding: 0 5%;
 }
+
+/*Titre pour les pages avec flèche retour*/
+.titre__arrow {
+  text-align: center;
+  text-decoration: none;
+  color: #393939;
+  font-size: 1.25em;
+}
+.titre__arrow:hover {
+  color: #9356DC;
+}
+
+/* Section card*/
+.section-card {
+  margin: 5%;
+}
+@media (min-width: 950px) {
+  .section-card {
+    margin: 10%;
+  }
+}
+.section-card__h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  transform-origin: left;
+}
+.section-card__h2--1 {
+  animation: tempo 300ms;
+}
+.section-card__h2--2 {
+  animation: tempo 600ms;
+}
+.section-card__h2--3 {
+  animation: tempo 900ms;
+}
+.section-card__h2--4 {
+  animation: tempo 1200ms;
+}
+
+/* cards des menus pour les pages*/
 .card__text {
   display: flex;
   align-items: initial;

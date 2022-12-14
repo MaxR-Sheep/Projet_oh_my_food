@@ -16,13 +16,9 @@
     0%{
         opacity: 1;
         visibility: visible;
-        transform: rotate(0);
-        
     }
     100%{
         opacity: 0;
-        transform: rotate(360deg);
-        transition: transform;
         visibility: hidden;
     }
 }

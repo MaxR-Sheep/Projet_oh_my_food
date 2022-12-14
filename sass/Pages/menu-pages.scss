@@ -1,5 +1,17 @@
-/* Section card*/
+/*Titre pour les pages avec flèche retour*/
+.titre{
+    &__arrow{
+        text-align: center;
+        text-decoration: none;
+        color: darken($fond-color, $amount: 75%);
+        font-size: 1.25em;
+        &:hover{
+            color: $color-primary;
+        }
+    }
+}
 
+/* Section card*/
 .section-card
 {
     margin: $espace5;
@@ -18,26 +30,8 @@
         }
     }
 }
-
+/* cards des menus pour les pages*/
 .card {
-    @include card ;
-    &__img{
-        @include largeur(100%);
-        border-radius: $radius $radius 0 0;
-        height: 10em;
-        object-fit: cover;
-        object-position: center;
-        @media (min-width:700px) {
-            height: 20em;
-        }
-    }
-    &__new{
-        @include new_volant;
-    }
-    &__heart{
-        @include flex_complet(center, initial, space-between);
-        padding: 0 $espace5;
-    }
     &__text{
         @include flex_complet(initial, column, initial);
         &--h3{
@@ -67,7 +61,5 @@
         background-color: white;
         margin-bottom: $espace5;
         transform-origin: left ;
-        
-        
     }
 }
