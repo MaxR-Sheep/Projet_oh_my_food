@@ -4,11 +4,17 @@
     color: white;
     margin: $espace5;
     @include couleur;
+    @include shadow(8px);
     width: $size;
     border: 0;
     padding: 1em 2em;
     font-size: medium;
+    &:hover{
+        @include shadow (8px 12px);
+        @include couleurbis;
+    }
 }
+
 .btn{
     @include boutton(100%);
     &__page{
@@ -23,7 +29,7 @@
     @include flex_complet(initial,initial, initial);
     &--anim{
         width: 10%;
-        margin-left: $espace5;
+        margin: 0 0 1em 1em;
         font-size: 0.9em;
         font-weight: bold;
         align-self: end;

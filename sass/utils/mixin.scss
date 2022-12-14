@@ -35,6 +35,11 @@
 @mixin couleur {
     background: linear-gradient(-5deg, $color-primary, $color-secondary);
 }
+
+/*pour couleur plus clair on fond*/
+@mixin couleurbis {
+    background: linear-gradient(-5deg, $color-primarybis, $color-secondarybis);
+}
 /*Flexbox utilisation complet*/
 @mixin flex_complet($itemalign:center,$direction:column,$judtiftcontent:center,){
     display: flex;
@@ -48,8 +53,8 @@
     margin: $size;
 }
 /*Ombre */
-@mixin shadow {
-    box-shadow: rgba(85 85 85 / 15%) 0px 5px 10px;
+@mixin shadow ($size:5px, $height:10px) {
+    box-shadow: rgba(85 85 85 / 15%) 0px $size $height;
 }
 /*Les cards de base*/
 @mixin card ( $size: 20px){
