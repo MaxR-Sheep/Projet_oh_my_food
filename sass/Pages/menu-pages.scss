@@ -28,9 +28,15 @@
 }
 
 /* Section card*/
-.section-card
-{
+.section-card{
     margin: $espace5;
+    &__responsive{
+        @media (min-width:980px) {
+            @include flex_complet( center,initial,space-around);
+            flex-wrap: wrap;
+
+        }
+    }
     &__h2{
         text-transform: uppercase;
         font-weight: 400;
@@ -45,6 +51,9 @@
 }
 /* cards des menus pour les pages*/
 .card {
+    @media (min-width:980px) {
+        width: 45%;
+    }
     &__text{
         @include flex_complet(initial, column, initial);
         &--h3{

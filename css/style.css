@@ -365,6 +365,14 @@ body {
 .fonct__marg {
   margin: 5%;
 }
+@media (min-width: 980px) {
+  .fonct__responsive {
+    display: flex;
+    align-items: center;
+    flex-direction: initial;
+    justify-content: initial;
+  }
+}
 .fonct__flex {
   display: flex;
   align-items: center;
@@ -376,6 +384,12 @@ body {
   height: 4.5em;
   width: 95%;
   background-color: #f8f8f8;
+}
+@media (min-width: 980px) {
+  .fonct__flex {
+    margin: 2%;
+    width: 100%;
+  }
 }
 .fonct__flex__icone {
   color: grey;
@@ -489,6 +503,15 @@ body {
 .section-card {
   margin: 5%;
 }
+@media (min-width: 980px) {
+  .section-card__responsive {
+    display: flex;
+    align-items: center;
+    flex-direction: initial;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 .section-card__h2 {
   text-transform: uppercase;
   font-weight: 400;
@@ -509,6 +532,11 @@ body {
 }
 
 /* cards des menus pour les pages*/
+@media (min-width: 980px) {
+  .card {
+    width: 45%;
+  }
+}
 .card__text {
   display: flex;
   align-items: initial;
