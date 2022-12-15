@@ -9,6 +9,9 @@
     &__img{
         width: 43%;
         margin: $espace5 $espace5*4;
+        @media (min-width:$desktop){
+            width: 30%;
+        }
     }
 }
 /*Intro de l'index*/
@@ -43,7 +46,7 @@
         margin: $espace5;
     }
     &__responsive{
-        @media (min-width:980px) {
+        @media (min-width:$desktop) {
             @include flex_complet(center,initial,initial);
         }
     }
@@ -55,7 +58,7 @@
         height: 4.5em;
         width: 95%;
         background-color: $fond-color;
-        @media (min-width:980px) {
+        @media (min-width:$desktop) {
             margin:2%;
             width: 100%;
         }

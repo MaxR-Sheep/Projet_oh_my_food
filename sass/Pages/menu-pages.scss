@@ -18,11 +18,15 @@
         border-radius: $radiustop $radiustop 0 0;
         position: relative;
         padding:  $espace5 $espace5 0;
-        margin-top: -2.5em;
+        margin: -2.5em 0 0 0;
         background-color: $fond-color;
+        @media (min-width:$desktop){
+            margin: -2.5em $espace5;
+        }
         &__h1{
             @include titre(1.65em ,initial);
             background-color: $fond-color;
+            font-weight: 100;
         }
     }
 }
@@ -30,11 +34,11 @@
 /* Section card*/
 .section-card{
     margin: $espace5;
+    
     &__responsive{
-        @media (min-width:980px) {
+        @media (min-width:$desktop) {
             @include flex_complet( center,initial,space-around);
             flex-wrap: wrap;
-
         }
     }
     &__h2{
@@ -49,9 +53,18 @@
         }
     }
 }
+
+/* section pourd card dans les pages et responsive*/
+.section-menu{
+    margin: $espace5;
+    @media (min-width:$desktop) {
+        margin: $espace5 15% 0;
+    }
+
+}
 /* cards des menus pour les pages*/
 .card {
-    @media (min-width:980px) {
+    @media (min-width:$desktop) {
         width: 45%;
     }
     &__text{

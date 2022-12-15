@@ -89,6 +89,9 @@
     position: absolute;
     margin: 4% 65%;
     @include tablette(10%,4% 65%);
+    @media (min-width:980px){
+        margin: 2% 0 0 25%;
+    }
 }
 /* breakpoint*/
 @mixin tablette ($width:100%, $margin:0){

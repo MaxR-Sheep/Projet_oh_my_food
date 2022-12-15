@@ -322,6 +322,11 @@ body {
   width: 43%;
   margin: 5% 20%;
 }
+@media (min-width: 980px) {
+  .titre__img {
+    width: 30%;
+  }
+}
 
 /*Intro de l'index*/
 .intro {
@@ -461,6 +466,11 @@ body {
     margin: 4% 65%;
   }
 }
+@media (min-width: 980px) {
+  .card__new {
+    margin: 2% 0 0 25%;
+  }
+}
 .card__heart {
   display: flex;
   align-items: center;
@@ -489,14 +499,20 @@ body {
   border-radius: 35px 35px 0 0;
   position: relative;
   padding: 5% 5% 0;
-  margin-top: -2.5em;
+  margin: -2.5em 0 0 0;
   background-color: #f8f8f8;
+}
+@media (min-width: 980px) {
+  .intro__page {
+    margin: -2.5em 5%;
+  }
 }
 .intro__page__h1 {
   font-family: "Shrikhand";
   font-size: 1.65em;
   text-align: initial;
   background-color: #f8f8f8;
+  font-weight: 100;
 }
 
 /* Section card*/
@@ -529,6 +545,16 @@ body {
 }
 .section-card__h2--4 {
   animation: tempo 1200ms;
+}
+
+/* section pourd card dans les pages et responsive*/
+.section-menu {
+  margin: 5%;
+}
+@media (min-width: 980px) {
+  .section-menu {
+    margin: 5% 15% 0;
+  }
 }
 
 /* cards des menus pour les pages*/
