@@ -42,6 +42,11 @@
     &__marg{
         margin: $espace5;
     }
+    &__responsive{
+        @media (min-width:980px) {
+            @include flex_complet(center,initial,initial);
+        }
+    }
     &__flex{
         @include flex_complet(center, initial , initial);
         @include shadow;
@@ -50,6 +55,10 @@
         height: 4.5em;
         width: 95%;
         background-color: $fond-color;
+        @media (min-width:980px) {
+            margin:2%;
+            width: 100%;
+        }
         &__icone{
             @include icone ( grey, 5% 7% 5% 1%);
         }
