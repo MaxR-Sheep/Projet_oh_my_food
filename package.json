@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxR-Sheep/omf.git"
+    "url": "git+https://github.com/MaxR-Sheep/projet_oh_my_food.git"
   },
   "author": "maxime",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaxR-Sheep/omf/issues"
+    "url": "https://github.com/MaxR-Sheep/projet_oh_my_food/issues"
   },
-  "homepage": "https://github.com/MaxR-Sheep/omf#readme"
+  "homepage": "https://github.com/MaxR-Sheep/projet_oh_my_food#readme"
 }
