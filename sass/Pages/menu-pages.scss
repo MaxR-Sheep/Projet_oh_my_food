@@ -10,7 +10,6 @@
         }
     }
 }
-
 /* intro index et page*/
 .intro{
     &__page{
@@ -30,11 +29,9 @@
         }
     }
 }
-
 /* Section card*/
 .section-card{
     margin: $espace5;
-    
     &__responsive{
         @media (min-width:$desktop) {
             @include flex_complet( center,initial,space-around);
@@ -53,14 +50,12 @@
         }
     }
 }
-
 /* section pourd card dans les pages et responsive*/
 .section-menu{
     margin: $espace5;
     @media (min-width:$desktop) {
         margin: $espace5 15% 0;
     }
-
 }
 /* cards des menus pour les pages*/
 .card {

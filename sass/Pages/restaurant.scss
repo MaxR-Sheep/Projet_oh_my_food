@@ -37,7 +37,6 @@
         @include largeur(90%);
     }
 }
-
 /*fonctionnement index*/
 .fonct {
     padding: 2em 0 2em;
@@ -82,7 +81,6 @@
         font-size: 1em;
     }
 }
-
 /* Card pour les restaurants*/
 .card {
     @include card ;

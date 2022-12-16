@@ -8,9 +8,7 @@ body{
     margin: 0;
     width: 100%;
     @include tablette;
-
 }
-
 /* footer*/
 .footer{
     background-color: darken($color: darkgrey, $amount: 45%);
